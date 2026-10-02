@@ -1,5 +1,6 @@
 import { Link, useParams } from 'react-router-dom';
-import { getTome } from '../data/tomes';
+import { getTome, libelleChapitre } from '../data/tomes';
+import MotsCles from '../components/chapitre/MotsCles';
 import useDocumentTitle from '../lib/useDocumentTitle';
 import NotFound from './NotFound';
 
@@ -15,6 +16,9 @@ export default function Tome() {
         <p className="eyebrow">Tome {tome.numero}</p>
         <h1 className="page-title">{tome.titre}</h1>
         {tome.sousTitre && <p className="lead">{tome.sousTitre}</p>}
+        <div style={{ marginTop: '0.75rem' }}>
+          <MotsCles mots={tome.motsCles} />
+        </div>
       </header>
 
       {tome.chapitres.length === 0 ? (
@@ -24,7 +28,7 @@ export default function Tome() {
           {tome.chapitres.map((c) => (
             <li key={c.id}>
               <Link className="chap-link" to={`/tome/${tome.slug}/${c.slug}`}>
-                <span className="eyebrow">{c.numero === 0 ? 'Avant' : `Chap. ${c.numero}`}</span>
+                <span className="eyebrow chap-num">{libelleChapitre(c)}</span>
                 <span>
                   <strong>{c.titre}</strong>
                   {c.resume && <span style={{ display: 'block', color: 'var(--text-muted)' }}>{c.resume}</span>}

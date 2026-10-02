@@ -399,6 +399,11 @@ a.tome-card:hover { transform: translateY(-2px); border-color: var(--accent); bo
   text-decoration: none; color: var(--text);
 }
 .chap-link:hover { background: var(--surface-2); }
+.chap-num { flex: 0 0 6.5rem; }
+@media (max-width: 520px) {
+  .chap-link { flex-direction: column; gap: 0.2rem; }
+  .chap-num { flex: none; }
+}
 .notice {
   padding: 1rem 1.25rem;
   border-radius: var(--radius);
@@ -426,7 +431,7 @@ a.tome-card:hover { transform: translateY(-2px); border-color: var(--accent); bo
   display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 1rem;
   margin-bottom: 0.75rem;
 }
-.chapitre-livre .eyebrow { text-decoration: none; }
+.chapitre-livre .eyebrow { text-decoration: none; display: inline-flex; align-items: center; min-height: var(--tap); }
 .chapitre-livre .eyebrow:hover { text-decoration: underline; }
 .chapitre-num {
   font-family: var(--font-title);
@@ -736,9 +741,9 @@ button.piste-entete:hover { background: var(--surface-2); }
     overflow-y: auto;
     transform: translateX(-105%);
     visibility: hidden;
-    transition: transform 0.25s, visibility 0.25s;
+    transition: transform 0.25s, visibility 0s 0.25s;
   }
-  .sommaire.ouvert { transform: none; visibility: visible; }
+  .sommaire.ouvert { transform: none; visibility: visible; transition: transform 0.25s; }
   .tiroir-fond { position: fixed; inset: 0; z-index: 55; background: rgba(0, 0, 0, 0.45); }
 }
 
