@@ -1,0 +1,10 @@
+node_modules
+dist
+dist-ssr
+*.local
+*.log
+.DS_Store
+.idea
+.vscode/*
+# Sorties temporaires des scripts de conversion
+scripts/convert/out/
