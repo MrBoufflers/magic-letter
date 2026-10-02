@@ -340,18 +340,6 @@ CH[11] = dict(
               TITRE=j("Du plomb en or"),
               RESUME=j("Nous poursuivons notre petit travail de détective pour observer les indices qui sont cachés dans le texte mais que nous pouvons comprendre" + N + ": je rappelle que cela s’appelle l’implicite du texte" + N + "!")),
     repl=[
-        # L'étiquette « Piste rouge » seule précède la citation : le commentaire qui suit est en piste rouge.
-        ('''      {
-        type: 'piste',
-        niveau: "verte",
-        contenu: (
-          <>
-          <p>Hermione est devenu un''', '''      {
-        type: 'piste',
-        niveau: 'rouge',
-        contenu: (
-          <>
-          <p>Hermione est devenu un'''),
     ],
 )
 

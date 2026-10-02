@@ -317,7 +317,7 @@ export default {
       },
       {
         type: 'piste',
-        niveau: "verte",
+        niveau: "rouge",
         contenu: (
           <>
           <p>Nouvelle allusion au rapport qui existe entre l'arrivée de Voldemort et une sorte de destin cosmique et universel. ( voir ci-dessus la note piste noire de la page 261).</p>

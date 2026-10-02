@@ -295,13 +295,23 @@ def convert(path):
     arrets = [{'page': None, 'repere': None, 'blocs': []}]
     cur = {'kind': None, 'paras': [], 'niveau': None, 'note': None}
 
+    attente = {'niveau': None}
+
     def flush():
         if cur['kind'] and any(x.get('kind') == 'p' and x['plain'].strip() for x in cur['paras']):
             arrets[-1]['blocs'].append(dict(cur))
+        elif cur['kind'] == 'piste' and cur['niveau'] in ('rouge', 'noire'):
+            # étiquette seule (suivie d'une citation) : le commentaire qui suit garde ce niveau
+            attente['niveau'] = cur['niveau']
         cur.update(kind=None, paras=[], niveau=None, note=None)
 
     def start(kind, niveau=None, note=None):
         flush()
+        if kind == 'piste' and niveau == 'verte' and attente['niveau']:
+            niveau = attente['niveau']
+            report.setdefault('niveau_herite', []).append(niveau)
+        if kind != 'citation':
+            attente['niveau'] = None
         cur.update(kind=kind, niveau=niveau, note=note, paras=[])
 
     seen_body = False

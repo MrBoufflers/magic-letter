@@ -30,7 +30,7 @@ export default {
       },
       {
         type: 'piste',
-        niveau: 'rouge',
+        niveau: "rouge",
         contenu: (
           <>
           <p>Hermione est devenu un <strong>adjuvant</strong>, c'est-à-dire <Cle>un personnage ou un objet qui va aider le héros à réaliser sa quête</Cle>. On peut considérer que dans ce premier volume la quête de Harry est de <Cle>se faire sa place à Poudlard,</Cle> au plus généralement dans le monde des sorciers ( celui de ses parents, n'oublions pas qu'au début de l'histoire Harry était un orphelin maltraité par sa famille d'accueil) : <Cle>il est évident que de devenir un champion de Quidditch pourrait lui servir à réaliser cet objectif.</Cle> Rappelons que Harry a tout pour devenir une légende de ce sport :</p>
