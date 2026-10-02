@@ -2,6 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom'
 import ThemeProvider from './lib/ThemeProvider'
+import FiltreProvider from './lib/FiltreProvider'
 import '@fontsource/source-sans-3/latin-400.css'
 import '@fontsource/source-sans-3/latin-400-italic.css'
 import '@fontsource/source-sans-3/latin-600.css'
@@ -15,7 +16,9 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
       <ThemeProvider>
-        <App />
+        <FiltreProvider>
+          <App />
+        </FiltreProvider>
       </ThemeProvider>
     </BrowserRouter>
   </StrictMode>,

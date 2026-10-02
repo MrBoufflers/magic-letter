@@ -67,5 +67,6 @@ export const tomes = [
 export function ligneSource(numeroTome, page) {
   const tome = tomes.find((t) => t.numero === numeroTome);
   const titre = tome ? tome.titre : '';
-  return `${source.auteur}, ${titre}, ${source.edition}, p. ${page}.`;
+  const fin = page != null ? `, p.\u00a0${page}.` : '.';
+  return `${source.auteur}, ${titre}, ${source.edition}${fin}`;
 }
