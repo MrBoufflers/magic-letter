@@ -48,7 +48,9 @@ export default function Chapitre() {
     // les mots-clés ne changent qu'avec le chapitre
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [chapitreCourant]);
-  useDocumentTitle(trouve ? `${libelleChapitre(trouve.chapitre)} · ${trouve.chapitre.titre}` : null);
+  useDocumentTitle(
+    trouve ? [libelleChapitre(trouve.chapitre), trouve.chapitre.titre].filter(Boolean).join(' · ') : null,
+  );
   if (!trouve) return <NotFound />;
 
   const { chapitre, precedent, suivant } = trouve;
@@ -65,8 +67,8 @@ export default function Chapitre() {
               <Link to={base} className="eyebrow">Tome {tome.numero} · {tome.titre}</Link>
               <MotsCles mots={motsCles} cibles={cibles} />
             </div>
-            <p className="chapitre-num">{libelleChapitre(chapitre)}</p>
-            <h1 className="page-title">{chapitre.titre}</h1>
+            {chapitre.titre && <p className="chapitre-num">{libelleChapitre(chapitre)}</p>}
+            <h1 className="page-title">{chapitre.titre ?? libelleChapitre(chapitre)}</h1>
             <div className="chapitre-outils no-print">
               <button type="button" className="btn btn-petit bouton-sommaire" onClick={() => setTiroir(true)}>
                 <IconList size={18} aria-hidden="true" /> Sommaire
@@ -101,7 +103,7 @@ export default function Chapitre() {
                 <IconArrowLeft size={18} aria-hidden="true" />
                 <span>
                   <span className="nav-sous">{libelleChapitre(precedent)}</span>
-                  {precedent.titre}
+                  {precedent.titre ?? 'Chapitre précédent'}
                 </span>
               </Link>
             ) : <span />}
@@ -109,7 +111,7 @@ export default function Chapitre() {
               <Link className="btn suivant" to={`${base}/${suivant.slug}`}>
                 <span>
                   <span className="nav-sous">{libelleChapitre(suivant)}</span>
-                  {suivant.titre}
+                  {suivant.titre ?? 'Chapitre suivant'}
                 </span>
                 <IconArrowRight size={18} aria-hidden="true" />
               </Link>

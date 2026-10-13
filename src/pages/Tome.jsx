@@ -1,6 +1,8 @@
 import { Link, useParams } from 'react-router-dom';
 import { getTome, libelleChapitre } from '../data/tomes';
 import MotsCles from '../components/chapitre/MotsCles';
+import BlockRenderer from '../components/blocks/BlockRenderer';
+import { TomeContext } from '../lib/contexts';
 import useDocumentTitle from '../lib/useDocumentTitle';
 import NotFound from './NotFound';
 
@@ -21,6 +23,15 @@ export default function Tome() {
         </div>
       </header>
 
+      {tome.introduction.length > 0 && (
+        <section className="prose-w tome-intro" aria-label="Introduction du tome">
+          <TomeContext.Provider value={tome.numero}>
+            <BlockRenderer blocs={tome.introduction} prefixe="intro" />
+          </TomeContext.Provider>
+        </section>
+      )}
+
+      {tome.chapitres.length > 0 && <h2 className="sommaire-titre">Chapitres</h2>}
       {tome.chapitres.length === 0 ? (
         <p className="notice prose-w">Les chapitres de ce tome sont en préparation.</p>
       ) : (
@@ -30,7 +41,7 @@ export default function Tome() {
               <Link className="chap-link" to={`/tome/${tome.slug}/${c.slug}`}>
                 <span className="eyebrow chap-num">{libelleChapitre(c)}</span>
                 <span>
-                  <strong>{c.titre}</strong>
+                  {c.titre && <strong>{c.titre}</strong>}
                   {c.resume && <span style={{ display: 'block', color: 'var(--text-muted)' }}>{c.resume}</span>}
                 </span>
               </Link>

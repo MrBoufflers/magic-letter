@@ -790,6 +790,10 @@ button.piste-entete:hover { background: var(--surface-2); }
 /* Bannière d'arrêt en tête de chapitre */
 .chapitre-tete + .marque-page { margin-top: 0; margin-bottom: 0.5rem; }
 
+/* Sommaire de tome : introduction avant la liste */
+.tome-intro { margin-bottom: 2rem; }
+.sommaire-titre { font-size: 1.5rem; margin-bottom: 0.8rem; }
+
 /* ---------- Mouvement réduit ---------- */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {

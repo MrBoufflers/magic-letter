@@ -3,14 +3,21 @@
 // le contenu de chaque tome disponible vient de son dossier de données.
 import { tomes as tomesConfig } from '../config';
 import tome1 from './tome1';
+import tome2 from './tome2';
+import tome3 from './tome3';
+import tome4 from './tome4';
 
 const contenus = {
   1: tome1,
+  2: tome2,
+  3: tome3,
+  4: tome4,
 };
 
 export const tomes = tomesConfig.map((t) => ({
   sousTitre: null,
   motsCles: [],
+  introduction: [],
   chapitres: [],
   ...t,
   ...(contenus[t.numero] ?? {}),
