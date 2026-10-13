@@ -27,7 +27,7 @@ def fleches(s):
     # devant une citation ou une étiquette de piste
     s = re.sub(r'<Fl />\s*(?=' + OUVRANTES + r'[«“]|' + OUVRANTES + r'[Pp]istes?\b)', '', s)
     # après une étiquette de piste (« piste noire>>> »)
-    s = re.sub(r'([Pp]istes? (?:rouges?|noires?|vertes?)(?:</[a-zA-Z]+>)*)\s*<Fl />', r'\1', s)
+    s = re.sub(r'([Pp]istes? (?:rouges?|noires?|vertes?)(?:</[a-zA-Z]+>)*(?:<[a-zA-Z]+>)*)\s*<Fl />', r'\1', s)
     # collée à un mot (pas d'espace d'un côté)
     s = re.sub(r'(?<=[\w»)])<Fl />', '', s)
     s = re.sub(r'<Fl />(?=[\w«(])', '', s)
