@@ -5,6 +5,7 @@ import sys
 
 sys.path.insert(0, __file__.rsplit("/", 1)[0])
 from gen import typo  # noqa: E402
+import regles  # noqa: E402
 
 
 def typo_jsx(s):
@@ -36,8 +37,9 @@ def finalise(src, dst, meta, repl, post=None):
         s = re.sub(pat, lambda m: typo_jsx(new), s)
     if post:
         s = post(s)
+    s = regles.appliquer(s, dst.rsplit('/', 1)[-1])
     # imports recalculés d'après les composants réellement utilisés
-    comps = ['Cle', 'Fl', 'Lien', 'Blanc', 'Ligne', 'Tableau', 'FichePersonnage', 'Definition', 'Etoiles', 'Mots']
+    comps = ['Cle', 'Notion', 'Fl', 'Lien', 'Blanc', 'Ligne', 'Tableau', 'FichePersonnage', 'Definition', 'Etoiles', 'Mots']
     used = [c for c in comps if re.search(r'<%s[\s/>]' % c, s)]
     s = re.sub(r"^import \{[^}]*\} from '../../../components/contenu';\n", '', s, flags=re.M)
     if used:
