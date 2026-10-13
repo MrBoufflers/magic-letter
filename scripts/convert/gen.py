@@ -22,7 +22,9 @@ import dump  # noqa: E402
 
 NBSP = ' '
 EMOJI = re.compile('[\U0001F000-\U0001FAFF☀-➿️]')
-LABEL = re.compile(r'^\s*\(?\s*(?:》|>)+\s*_*\s*(?:\*\*)?(?:[Pp]istes?\s+(?:très\s+)?(rouge|noire|verte|bleue/rouge|bleue|Rouge|Noire)s?|(Complètement hors-piste))\s*(?:\*\*)?_*\s*(?:》|>)+\s*(?:[:;][\s\u00a0]*)*')
+LABEL = re.compile(r'^\s*\(?\s*(?:》|>)+\s*_*\s*(?:\*\*)?\s*(?:[Pp][Ii]stes?\s+(?:\(?très\)?\s+)?(rouge\s*/\s*noire|rouge|noire|verte|bleue/rouge|bleue|Rouge|Noire|Bleue|Verte)s?|((?:Complètement )?[Hh]ors-piste))\s*(?:\*\*)?_*\s*(?:》|>)+\s*(?:\*\*)?\s*(?:[:;][\s\u00a0]*)*')
+# « Piste verte : » seule sur sa ligne, sans flèches
+LABEL_SEUL = re.compile(r'^\s*(?:\*\*)?\s*[Pp]iste\s+(verte|rouge|noire)\s*:?\s*(?:\*\*)?\s*$')
 
 
 def niveau_label(m):
@@ -30,11 +32,12 @@ def niveau_label(m):
     if m.group(2):
         report.setdefault('etiquettes_non_standard', []).append(m.group(0).strip())
         return 'noire'
-    c = m.group(1).lower()
+    c = re.sub(r'\s+', '', m.group(1).lower())
     if 'très' in m.group(0) or c not in ('rouge', 'noire', 'verte'):
         report.setdefault('etiquettes_non_standard', []).append(m.group(0).strip())
-    return {'bleue/rouge': 'rouge', 'bleue': 'rouge'}.get(c, c)
-MARK = re.compile(r'^\s*(?:>\s*)*(?:EXERCICE\s*)?(?:>\s*)*(?:Page|PAGE|page|P\.|p\.|P|p)\s*(\d+)\b(?:\s*\([^)]{1,20}\))?')
+    return {'bleue/rouge': 'rouge', 'bleue': 'rouge', 'rouge/noire': 'noire'}.get(c, c)
+MARK = re.compile(r'^\s*(?:-\s*>\s*)?(?:>\s*)*(?:EXERCICE\s*)?(?:>\s*)*(?:Page|PAGE|page|P\.|p\.|P|p)\s*(\d+)\b(?:\s*\([^)]{1,20}\))?(?:\s+et suivantes)?')
+CHAP = re.compile(r'^\s*(?:>\s*)*\(?\s*(?:\((?:[Ff]in)(?: du)?\)\s*)?[Cc]hapitre\s+(\d+)\s*(?:\(\s*fin du livre\s*\))?\s*(?:[:\-][\s\u00a0]*)?(.*)$')
 EXO = re.compile(r'^[\s>]*(?:EXERCICE|Exercice)\b[\s\u00a0]*:?[\s\u00a0]*')
 KEYW = re.compile(r'^\s*(Mots-clés|Mots-clé|Mots clés|mots-clés|Notions?\s*[- ]\s*clés?|Notion clé|Notions étudiées|Notions)\s*:\s*(.*)$', re.I)
 
@@ -255,7 +258,15 @@ def split_quote(p):
     lead = len(t) - len(t.lstrip())
     if t[lead:lead + 1] != '«':
         return None
-    end = t.find('»', lead)
+    solde, end = 0, -1
+    for k, ch in enumerate(t[lead:], lead):
+        if ch == '«':
+            solde += 1
+        elif ch == '»':
+            solde -= 1
+            if solde == 0:
+                end = k
+                break
     if end < 0 or end - lead < 40:
         return None
     k = end + 1
@@ -285,14 +296,44 @@ def is_exercise(p):
     return ('____' in t or re.match(r'^\s*\**\s*(EXERCICE|Exercice)', t) or re.match(r'^\s*(Mots de vocabulaire|Vocabulaire)', t))
 
 
-def convert(path):
+def grouper_citations(flat):
+    """Paragraphes consécutifs formant une seule citation « … » (dialogues) -> un élément groupé."""
+    out, i = [], 0
+    while i < len(flat):
+        el = flat[i]
+        t = el.get('plain', '').replace('*', '').strip() if el['kind'] == 'p' else ''
+        if t.startswith('«') and t.count('«') > t.count('»'):
+            j, solde, grp = i, 0, []
+            while j < len(flat) and j - i < 16 and flat[j]['kind'] == 'p':
+                q = flat[j]['plain'].replace('*', '')
+                solde += q.count('«') - q.count('»')
+                grp.append(flat[j])
+                if solde <= 0:
+                    break
+                j += 1
+            fin = grp[-1]['plain'].replace('*', '').rstrip()
+            if solde <= 0 and len(grp) > 1 and re.search(r'»[\s\u00a0.…]*$', fin):
+                report.setdefault('dialogues_groupes', []).append(t[:50])
+                out.append(dict(grp[0], groupe=[g for g in grp if g['plain'].strip()]))
+                i = j + 1
+                continue
+        out.append(el)
+        i += 1
+    return out
+
+
+def convert(path, chapitres=False, groupes=False):
     doc, rels, _ = dump.load(path)
     items = dump.walk_body(doc.find(dump.W + 'body'), rels)
     flat = flatten(items)
+    if groupes:
+        flat = grouper_citations(flat)
+    chaps = []
 
     motscles = None
     head = []
     arrets = [{'page': None, 'repere': None, 'blocs': []}]
+    intro = arrets
     cur = {'kind': None, 'paras': [], 'niveau': None, 'note': None}
 
     attente = {'niveau': None}
@@ -339,6 +380,11 @@ def convert(path):
 
         p = el
         t = p['plain']
+        if el.get('groupe'):
+            start('citation')
+            cur['paras'].extend(el['groupe'])
+            flush()
+            continue
         if el['hr'] and cur['kind'] == 'exercice':
             # filet horizontal dans un exercice : ligne d'écriture
             if t.strip():
@@ -368,6 +414,19 @@ def convert(path):
             head.append(t.strip())
             continue
         seen_body = True
+        cm = CHAP.match(t) if chapitres else None
+        if cm:
+            flush()
+            titre = cm.group(2).strip(' *_:')
+            raw = re.sub(r'^[\s>]*', '', t[:cm.start(2)]).strip(' *:-\u00a0')
+            chaps.append({'numero': int(cm.group(1)), 'titre': titre or None,
+                          'arrets': [{'page': None, 'repere': raw, 'blocs': []}]})
+            arrets = chaps[-1]['arrets']
+            continue
+        sl = LABEL_SEUL.match(t)
+        if sl:
+            start('piste', sl.group(1))
+            continue
         mm = MARK.match(t)
         if mm:
             flush()
@@ -383,7 +442,7 @@ def convert(path):
             if bold.rstrip().endswith('«'):
                 bold = bold[:bold.rindex('«')]
             rep = bold.strip()
-            rep = re.sub(r'^[\s>]*(EXERCICE)?[\s>]*', '', rep)
+            rep = re.sub(r'^[\s>\-]*(EXERCICE)?[\s>]*', '', rep)
             rep = re.sub(r'[\s:>\-]*$', '', rep)
             if 'EXERCICE' in bold:
                 rep = 'EXERCICE ' + rep
@@ -394,7 +453,7 @@ def convert(path):
                 arrets[-1]['repere'] = rep
                 start('exercice')
             if rest:
-                k = len(re.match(r'^[\s:;.\u00a0]*', plain(rest)).group(0))
+                k = len(re.match(r'^[\s:;.,\u00a0]*', plain(rest)).group(0))
                 rest = strip_prefix(rest, k)
             if rest and plain(rest).strip():
                 lm = LABEL.match(plain(rest))
@@ -453,6 +512,8 @@ def convert(path):
             start('piste', 'verte')
         cur['paras'].append(p)
     flush()
+    if chapitres:
+        return head, motscles, intro, chaps
     return head, motscles, arrets
 
 

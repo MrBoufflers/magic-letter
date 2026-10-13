@@ -56,7 +56,7 @@ def _italique(p):
 def introductions(s, fichier):
     i = s.index('arrets: [')
     m = re.search(r'\n  \{\n    (.*?)\n  \},\n', s[i:], re.S)
-    if not m or m.group(1).startswith('page:'):
+    if not m or m.group(1).startswith('page:') or m.group(1).startswith('repere:'):
         return s
     debut, fin = i + m.start(1), i + m.end(1)
     arret = s[debut:fin]

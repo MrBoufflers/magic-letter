@@ -8,3 +8,4 @@ dist-ssr
 .vscode/*
 # Sorties temporaires des scripts de conversion
 scripts/convert/out/
+__pycache__/
