@@ -9,14 +9,14 @@ export default function MotsCles({ mots, cibles = {}, label = 'Mots-clés' }) {
         <li key={m}>
           {cibles[m] ? (
             <a
-              className="rune rune-lien"
+              className="rune-cible"
               href={`#${cibles[m]}`}
               onClick={(e) => {
                 e.preventDefault();
                 allerA(cibles[m]);
               }}
             >
-              {m}
+              <span className="rune rune-lien">{m}</span>
             </a>
           ) : (
             <span className="rune">{m}</span>

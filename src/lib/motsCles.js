@@ -24,8 +24,10 @@ function motif(expr) {
 
 // Expression complète d'abord, puis (repli) son premier mot s'il est assez significatif.
 function motifs(mot) {
-  const premiers = normaliser(mot).split(/[\s']+/);
-  const res = [[motif(mot)]];
+  // article initial ignoré (« la quête secondaire » -> « quête secondaire »)
+  const sansArticle = normaliser(mot).replace(/^(?:(?:les|le|la)\s+|l')/, '');
+  const premiers = sansArticle.split(/[\s']+/);
+  const res = [[motif(sansArticle)]];
   if (premiers.length > 1 && premiers[0].length >= 5) res.push([motif(premiers[0])]);
   return res;
 }

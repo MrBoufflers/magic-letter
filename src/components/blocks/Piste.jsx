@@ -42,7 +42,7 @@ function PisteRepliable({ niveau, titre, contenu, ouverteParDefaut }) {
         {!ouverte && <span className="piste-hint">toucher pour ouvrir</span>}
         <IconChevronDown className="chevron" size={20} aria-hidden="true" />
       </button>
-      <div id={id} className="piste-corps" hidden={!ouverte}>
+      <div id={id} className={`piste-corps${ouverte ? '' : ' ferme'}`}>
         {contenu}
       </div>
     </section>

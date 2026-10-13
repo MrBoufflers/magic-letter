@@ -610,6 +610,7 @@ button.piste-entete:hover { background: var(--surface-2); }
 .forme-noire { fill: var(--piste-noire); }
 [data-theme="dark"] .forme-noire { fill: transparent; stroke: var(--piste-noire); stroke-width: 1.6; }
 .repliee { background: var(--bg-elev); }
+.piste-corps.ferme { display: none; }
 
 /* Exercice : parchemin à compléter */
 .exercice {
@@ -782,8 +783,10 @@ button.piste-entete:hover { background: var(--surface-2); }
 .piste-verte .etoiles { margin-left: 0.2rem; }
 
 /* Mots-clés cliquables et capsule visée */
-.rune-lien { text-decoration: none; min-height: 32px; cursor: pointer; }
-.rune-lien:hover { background: color-mix(in srgb, var(--accent) 20%, var(--surface)); }
+.rune-cible { display: inline-flex; align-items: center; min-height: var(--tap); text-decoration: none; color: inherit; cursor: pointer; }
+.rune-lien { text-decoration: underline; text-decoration-color: color-mix(in srgb, var(--accent) 60%, transparent); text-underline-offset: 3px; }
+.rune-cible:hover .rune-lien { background: color-mix(in srgb, var(--accent) 20%, var(--surface)); }
+.mots-cles { row-gap: 0; }
 .ancre { scroll-margin-top: calc(var(--header-h) + 1rem); border-radius: var(--radius); }
 .ancre.cible > .bloc { outline: 3px solid var(--accent); outline-offset: 3px; transition: outline-color 0.3s; }
 
@@ -888,12 +891,16 @@ button.piste-entete:hover { background: var(--surface-2); }
 
 /* ---------- Impression (complétée en phase 3) ---------- */
 @media print {
-  .header, .no-print, .sommaire, .tiroir-fond, .marque-page { display: none !important; }
+  .header, .no-print, .sommaire, .tiroir-fond, .chapitre-nav, .skip-link { display: none !important; }
+  .marque-page { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   body { background: #fff; color: #000; }
   .page-chapitre { display: block; }
   .bloc { break-inside: avoid; box-shadow: none !important; }
-  .piste-corps[hidden] { display: block !important; }
-  html.impression-ciblee body * { visibility: hidden; }
-  html.impression-ciblee .a-imprimer, html.impression-ciblee .a-imprimer * { visibility: visible; }
-  html.impression-ciblee .a-imprimer { position: absolute; left: 0; top: 0; width: 100%; }
+  /* tout le contenu s'imprime, pistes repliées comprises */
+  .piste-corps.ferme { display: block !important; }
+  .piste-hint, .piste-entete .chevron { display: none !important; }
+  /* impression d'un seul exercice */
+  html.impression-ciblee body *:not(:has(.a-imprimer)):not(.a-imprimer):not(.a-imprimer *) { display: none !important; }
+  html.impression-ciblee .page, html.impression-ciblee main { padding: 0 !important; margin: 0 !important; }
+  html.impression-ciblee .a-imprimer .btn { display: none !important; }
 }

@@ -13,7 +13,7 @@ const { chromium } = require(execSync('npm root -g').toString().trim() + '/playw
     await p.goto(c === '_tome' ? `http://localhost:4173/tome/${tome}` : `http://localhost:4173/tome/${tome}/${c}`);
     await p.waitForSelector(c === '_tome' ? '.page' : '.chapitre');
     // tout déplier pour que le texte des pistes repliées soit présent
-    await p.evaluate(() => document.querySelectorAll('.piste-corps[hidden]').forEach((e) => e.removeAttribute('hidden')));
+    await p.evaluate(() => document.querySelectorAll('.piste-corps.ferme').forEach((e) => e.classList.remove('ferme')));
     out[c] = await p.evaluate(() => ({
       texte: (() => {
         // texte du contenu seul : on retire les éléments d'interface

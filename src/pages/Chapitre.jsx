@@ -36,7 +36,13 @@ export default function Chapitre() {
   const tome = getTome(slugTome);
   const trouve = getChapitre(tome, slugChapitre);
   const [tiroir, setTiroir] = useState(false);
-  const fermer = useCallback(() => setTiroir(false), []);
+  const boutonSommaire = useRef(null);
+  const fermer = useCallback(() => {
+    setTiroir((ouvert) => {
+      if (ouvert) window.requestAnimationFrame(() => boutonSommaire.current?.focus());
+      return false;
+    });
+  }, []);
   const article = useRef(null);
   const [cibles, setCibles] = useState({});
   const chapitreCourant = trouve?.chapitre;
@@ -70,7 +76,13 @@ export default function Chapitre() {
             {chapitre.titre && <p className="chapitre-num">{libelleChapitre(chapitre)}</p>}
             <h1 className="page-title">{chapitre.titre ?? libelleChapitre(chapitre)}</h1>
             <div className="chapitre-outils no-print">
-              <button type="button" className="btn btn-petit bouton-sommaire" onClick={() => setTiroir(true)}>
+              <button
+                type="button"
+                ref={boutonSommaire}
+                className="btn btn-petit bouton-sommaire"
+                aria-expanded={tiroir}
+                onClick={() => setTiroir(true)}
+              >
                 <IconList size={18} aria-hidden="true" /> Sommaire
               </button>
               <FiltrePistes />
