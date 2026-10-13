@@ -60,12 +60,6 @@ CH[0] = dict(
         titre: 'La hiérarchie des informations :',
         contenu: (
           <>"""),
-        ("""<p><strong><Fl /></strong> Souvent les élèves""",
-         """<Etoiles n={5} />
-          <p><strong><Fl /></strong> Souvent les élèves"""),
-        ("""<p><Cle>Voici une autre information cinq étoile de ce dossier :</Cle></p>""",
-         """<Etoiles n={5} />
-          <p><Cle>Voici une autre information cinq étoile de ce dossier :</Cle></p>"""),
         ("""(en général, pas forcément dans le texte) : <Blanc /></p>""",
          """(en général, pas forcément dans le texte) :</p>
           <Ligne n={3} />"""),
@@ -86,12 +80,62 @@ CH[0] = dict(
     ],
 )
 
+NOTIONS_INCIPIT = ['lieu', 'temps', 'personnages', 'destin', 'objets', 'événements', 'quête du héros',
+                   'schéma narratif', 'péripéties', 'surprenant pour le lecteur']
+
+
+def ch00_post(s):
+    """Demandes d'Oni du 2026-10-13 pour l'incipit."""
+    # bannière d'arrêt en haut de page
+    s = rep(s, "  resume: ", '  banniere: "Attention, nous nous arrêtons tout de suite au bas de la page\u00a07\u00a0!",\n  resume: ')
+    # « L'incipit de … : » devient le titre de la citation
+    s = rep(s, """
+          <p><Cle>L’incipit de</Cle> <em><Cle>Harry Potter à l’école des sorciers</Cle></em> <Cle>:</Cle></p>""", "")
+    s = rep(s, """      {
+        type: 'citation',
+        page: 7,
+        texte: (""", """      {
+        type: 'citation',
+        page: 7,
+        titre: <><Cle>L’incipit de</Cle> <em><Cle>Harry Potter à l’école des sorciers</Cle></em>{'\u00a0'}<Cle>:</Cle></>,
+        texte: (""")
+    # guillemets autour des expressions citées ; la seconde est alignée sur la citation
+    s = rep(s, """<p><em><Fl /> Jamais quiconque n’aurait imaginé</em>… <Fl />""",
+            """<p>«\u00a0<em>Jamais quiconque n’aurait imaginé</em>…\u00a0» <Fl />""")
+    s = rep(s, """<p><strong><em><Fl /></em></strong><em>….d’étrange et le mystérieux</em> <Fl />""",
+            """<p>«\u00a0<em>…d’étrange ou de mystérieux</em>\u00a0» <Fl />""")
+    # étoiles à côté du libellé « Piste verte » des deux encadrés « 5 étoiles »
+    for debut in ("<p><strong><Fl /></strong> Souvent les élèves", "<p><Cle>Voici une autre information cinq étoile"):
+        s = rep(s, """      /* encadré */
+      {
+        type: 'piste',
+        niveau: "verte",
+        contenu: (
+          <>
+          """ + debut, """      {
+        type: 'piste',
+        niveau: 'verte',
+        etoiles: 5,
+        contenu: (
+          <>
+          """ + debut)
+    # notions du second encadré : capitales colorées
+    for i, n in enumerate(NOTIONS_INCIPIT):
+        s = rep(s, '<strong>%s</strong>' % n, '<Notion n={%d}>%s</Notion>' % (i, n))
+    s = rep(s, '<strong><Cle>expériences de lecture</Cle></strong>', '<Notion n={10}><Cle>expériences de lecture</Cle></Notion>')
+    s = rep(s, '<strong>niveau (</strong>', '<Notion n={11}>niveau</Notion> (')
+    return s
+
+
+CH[0]['post'] = ch00_post
+
+
 # ------------------------------------------------------------------ Chapitre 1
 CH[1] = dict(
     fichier='ch01.jsx',
     meta=dict(ID='tome-1-chapitre-1', SLUG='chapitre-1', NUM='1',
               TITRE=j("Les caractéristiques essentielles de Mister Dursley, Mrs Dursley et de Dudley"),
-              RESUME=j("Ce document concerne le premier chapitre. Retenez bien qu'en général les portraits sont composés avec trois types d'information, les caractéristiques morales et les habitudes" + N + "! (piste rouge" + N + ": on trouve aussi souvent des explications sur la place des personnages dans l'histoire).")),
+              RESUME=j("Ce document concerne le premier chapitre. Retenez bien qu'en général les portraits sont composés avec trois types d'information, les caractéristiques morales et les habitudes" + N + "!")),
     repl=[
         ('''          <p><strong><Fl /></strong> Définition : <strong>caractéristique</strong> : signe qui permet de reconnaître un individu d’un autre.</p>
           <p>Ex : Choisis des fraises <Cle>bien mûres</Cle> pour préparer ton gâteau !</p>
@@ -162,7 +206,7 @@ CH[2] = dict(
     fichier='ch02.jsx',
     meta=dict(ID='tome-1-chapitre-2', SLUG='chapitre-2', NUM='2',
               TITRE=j("Un portrait croisé"),
-              RESUME=j("Où l'on trouve le portraits d'autres personnages, et notamment celui de Harry. Piste rouge" + N + ": quand on fait un portrait croisé (ici, Harry et Dudley), cela donne très envie au lecteur de comparer les deux" + N + "!")),
+              RESUME=j("Où l'on trouve le portraits d'autres personnages, et notamment celui de Harry.")),
     repl=[
         ('''          <p><strong><Fl /> Portrait de Harry p. 26:</strong></p>''',
          arret('Portrait de Harry p. 26', 26)),

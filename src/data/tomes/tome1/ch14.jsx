@@ -11,8 +11,7 @@ export default {
   {
     blocs: [
       {
-        type: 'piste',
-        niveau: "verte",
+        type: 'introduction',
         contenu: (
           <>
           <p><em>Dans ce chapitre, le narrateur commence à dénouer certains fils de l’intrigue… Et le lecteur n’est pas au bout de ses surprises ! Dans une certaine mesure, on pourrait dire que JK Rowling emprunte certains codes (=des recettes) des romans policiers : le narrateur donne des indices et le lecteur essaye de deviner les explications qui manquent dans l’histoire.</em></p>
@@ -112,7 +111,7 @@ export default {
         niveau: "verte",
         contenu: (
           <>
-          <p>comme le dit Ron, Hagrid a « perdu la boule » (c’est une <strong>métaphore</strong>, une image d’homme sans tête qui marche au hasard sans réfléchir), il se comporte avec le dragon comme une maman ! Alors que manifestement l'animal est particulièrement agité et violent ( il mord tout le monde, Ron, Hagrid, le chien d'Hagrid….) <Cle>Hagrid nie la réalité</Cle> et continue de croire que le dragon est comme un petit enfant fragile : il prévoit une <em>peluche</em> pour son voyage vers la Roumanie ! Évidemment, son comportement est ridicule mais l'on voit aussi ici que <Cle>son amour pour les animaux est infini</Cle> et qu'il a vraiment un cœur en or. Comme le disait le grand écrivain anglais Oscar Wilde, « si vous fréquentez les animaux vous prenez le risque de devenir meilleur ! ».</p>
+          <p>Comme le dit Ron, Hagrid a « perdu la boule » (c’est une <strong>métaphore</strong>, une image d’homme sans tête qui marche au hasard sans réfléchir), il se comporte avec le dragon comme une maman ! Alors que manifestement l'animal est particulièrement agité et violent ( il mord tout le monde, Ron, Hagrid, le chien d'Hagrid….) <Cle>Hagrid nie la réalité</Cle> et continue de croire que le dragon est comme un petit enfant fragile : il prévoit une <em>peluche</em> pour son voyage vers la Roumanie ! Évidemment, son comportement est ridicule mais l'on voit aussi ici que <Cle>son amour pour les animaux est infini</Cle> et qu'il a vraiment un cœur en or. Comme le disait le grand écrivain anglais Oscar Wilde, « si vous fréquentez les animaux vous prenez le risque de devenir meilleur ! ».</p>
           </>
         ),
       },

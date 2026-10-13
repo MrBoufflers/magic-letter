@@ -27,7 +27,7 @@ export default {
         niveau: "rouge",
         contenu: (
           <>
-          <p>ce dernier chapitre s'ouvre sur cette petite phrase toute simple en utilisant ce qu'on appelle en grammaire un <strong>présentatif</strong>. Ce n'est pas tout à fait au programme, mais il est difficile de parler de cette construction sans expliquer que dans la langue française <Cle>on peut mettre un mot ou un groupe de mots en valeur en utilisant</Cle> c'est, il y a, voici… Dans ce cas-là on regardera précisément ce qui vient juste après (et qu'on appelle donc en grammaire le complément du présentatif). Ici, le complément du présentatif est simplement « Quirrell »… <Cle>un seul mot pour résoudre l'un des plus gros mystères de cette histoire !</Cle> C'est un élément stylistique récurrent chez JK Rowling : elle aime bien les révélations qui commencent par un présentatif, nous en trouverons de nombreuses autres dans son œuvre !</p>
+          <p>Ce dernier chapitre s'ouvre sur cette petite phrase toute simple en utilisant ce qu'on appelle en grammaire un <strong>présentatif</strong>. Ce n'est pas tout à fait au programme, mais il est difficile de parler de cette construction sans expliquer que dans la langue française <Cle>on peut mettre un mot ou un groupe de mots en valeur en utilisant</Cle> c'est, il y a, voici… Dans ce cas-là on regardera précisément ce qui vient juste après (et qu'on appelle donc en grammaire le complément du présentatif). Ici, le complément du présentatif est simplement « Quirrell »… <Cle>un seul mot pour résoudre l'un des plus gros mystères de cette histoire !</Cle> C'est un élément stylistique récurrent chez JK Rowling : elle aime bien les révélations qui commencent par un présentatif, nous en trouverons de nombreuses autres dans son œuvre !</p>
           </>
         ),
       },
@@ -110,7 +110,7 @@ export default {
         niveau: "verte",
         contenu: (
           <>
-          <p>pour l'instant, Voldemort n'a pas de <em>substance</em>, il habite le corps d'autrui, mais on se doute bien que s’il trouve une meilleure enveloppe charnelle, il gagnera très largement en puissance. Harry n'a qu'à bien s'accrocher !</p>
+          <p>Pour l'instant, Voldemort n'a pas de <em>substance</em>, il habite le corps d'autrui, mais on se doute bien que s’il trouve une meilleure enveloppe charnelle, il gagnera très largement en puissance. Harry n'a qu'à bien s'accrocher !</p>
           </>
         ),
       },

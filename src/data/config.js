@@ -4,8 +4,8 @@
 export const A_FOURNIR = 'À FOURNIR';
 
 export const site = {
-  nom: 'Magic Letter',
-  accroche: 'Lire Harry Potter, chapitre par chapitre, et progresser en français.',
+  nom: 'Magic Harry',
+  accroche: 'Lire Harry Potter, chapitre par chapitre, et progresser en français… sans (trop) se fatiguer.',
 };
 
 // Ligne de source des citations (cahier, 6.2) :

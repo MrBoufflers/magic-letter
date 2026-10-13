@@ -610,6 +610,7 @@ button.piste-entete:hover { background: var(--surface-2); }
 .forme-noire { fill: var(--piste-noire); }
 [data-theme="dark"] .forme-noire { fill: transparent; stroke: var(--piste-noire); stroke-width: 1.6; }
 .repliee { background: var(--bg-elev); }
+.piste-corps.ferme { display: none; }
 
 /* Exercice : parchemin à compléter */
 .exercice {
@@ -747,6 +748,137 @@ button.piste-entete:hover { background: var(--surface-2); }
   .tiroir-fond { position: fixed; inset: 0; z-index: 55; background: rgba(0, 0, 0, 0.45); }
 }
 
+/* ---------- Demandes d'Oni (2026-10-13) ---------- */
+/* Notions en capitales colorées (incipit) */
+:root, [data-theme="light"] {
+  --notion-0: #85600f; --notion-1: #5a2d82; --notion-2: #1d5c8f;
+  --notion-3: #96471c; --notion-4: #8a1f6a; --notion-5: #3b3fa0;
+}
+[data-theme="dark"] {
+  --notion-0: #e8c66a; --notion-1: #c7a8f0; --notion-2: #8fc3f0;
+  --notion-3: #f0a273; --notion-4: #f08fd0; --notion-5: #aab0ff;
+}
+.notion { text-transform: uppercase; letter-spacing: 0.03em; font-weight: 800; }
+.notion-0 { color: var(--notion-0); } .notion-1 { color: var(--notion-1); }
+.notion-2 { color: var(--notion-2); } .notion-3 { color: var(--notion-3); }
+.notion-4 { color: var(--notion-4); } .notion-5 { color: var(--notion-5); }
+
+/* Capsule Introduction */
+.introduction {
+  padding: 0.7rem 1rem 1rem;
+  background: color-mix(in srgb, var(--accent) 8%, var(--surface));
+  border: 1px solid color-mix(in srgb, var(--accent) 40%, var(--border));
+  border-radius: var(--radius);
+}
+.introduction-entete { display: flex; align-items: center; gap: 0.45rem; margin-bottom: 0.4rem; color: var(--accent); }
+.introduction-label { font-weight: 700; font-size: 0.92rem; letter-spacing: 0.04em; text-transform: uppercase; }
+.introduction-corps p + p { margin-top: 0.7rem; }
+
+/* Icônes des capsules */
+.icone-piste, .icone-exercice { flex-shrink: 0; }
+.piste-rouge .icone-piste { color: var(--piste-rouge); }
+.piste-noire .icone-piste { color: var(--text); }
+.icone-exercice { color: var(--candle); }
+.piste-verte.sans-libelle .piste-entete.statique { padding: 0.55rem 1rem 0; }
+.piste-verte .etoiles { margin-left: 0.2rem; }
+
+/* Mots-clés cliquables et capsule visée */
+.rune-cible { display: inline-flex; align-items: center; min-height: var(--tap); text-decoration: none; color: inherit; cursor: pointer; }
+.rune-lien { text-decoration: underline; text-decoration-color: color-mix(in srgb, var(--accent) 60%, transparent); text-underline-offset: 3px; }
+.rune-cible:hover .rune-lien { background: color-mix(in srgb, var(--accent) 20%, var(--surface)); }
+.mots-cles { row-gap: 0; }
+.ancre { scroll-margin-top: calc(var(--header-h) + 1rem); border-radius: var(--radius); }
+.ancre.cible > .bloc { outline: 3px solid var(--accent); outline-offset: 3px; transition: outline-color 0.3s; }
+
+/* Bannière d'arrêt en tête de chapitre */
+.chapitre-tete + .marque-page { margin-top: 0; margin-bottom: 0.5rem; }
+
+/* Sommaire de tome : introduction avant la liste */
+.tome-intro { margin-bottom: 2rem; }
+.sommaire-titre { font-size: 1.5rem; margin-bottom: 0.8rem; }
+
+/* =============================================================
+   COMMENT UTILISER LE SITE
+   ============================================================= */
+.howto-hero {
+  position: relative; overflow: hidden;
+  padding: clamp(1.5rem, 4vw, 2.75rem) clamp(1.25rem, 4vw, 2.5rem);
+  border-radius: var(--radius-lg);
+  background: var(--banner-bg);
+  color: var(--banner-text);
+  border: 2px solid var(--banner-star);
+  box-shadow: var(--shadow);
+}
+.howto-hero .pattern { position: absolute; inset: 0; color: var(--banner-star); opacity: 0.2; pointer-events: none; }
+.howto-hero > :not(.pattern) { position: relative; }
+.howto-hero .page-title { color: var(--banner-text); }
+.howto-eyebrow { color: var(--banner-star); }
+.howto-lead { color: var(--banner-text); opacity: 0.92; }
+.howto-sommaire { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1.25rem; }
+.howto-sommaire a {
+  display: inline-flex; align-items: center; min-height: var(--tap);
+  padding: 0.4rem 1rem; border-radius: 999px;
+  background: var(--banner-star); color: #141a33; font-weight: 700; text-decoration: none;
+}
+.howto-section { margin-top: 2.5rem; scroll-margin-top: calc(var(--header-h) + 1rem); }
+.howto-section > h2 { font-size: clamp(1.5rem, 3.5vw, 2rem); margin-bottom: 1rem; }
+.howto-h3 { font-size: 1.1rem; font-weight: 700; margin: 1.25rem 0 0.6rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.06em; }
+
+.legende { list-style: none; padding: 0; display: grid; gap: 0.7rem; grid-template-columns: repeat(auto-fill, minmax(min(100%, 19rem), 1fr)); }
+.legende-item {
+  display: flex; gap: 0.8rem; align-items: flex-start;
+  padding: 0.85rem 1rem;
+  border-radius: var(--radius);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 5px solid var(--border-strong);
+}
+.legende-verte { border-left-color: var(--piste-verte); }
+.legende-rouge { border-left-color: var(--piste-rouge); }
+.legende-noire { border-left-color: var(--piste-noire); }
+.legende-citation, .legende-introduction, .legende-marque-page { border-left-color: var(--candle); }
+.legende-exercice { border-left-style: dashed; }
+.legende-icone {
+  display: inline-flex; align-items: center; justify-content: center; gap: 0.2rem;
+  min-width: 3rem; min-height: 2.5rem; flex-shrink: 0;
+  color: var(--text);
+}
+.legende-rouge .legende-icone { color: var(--piste-rouge); }
+.legende-exercice .legende-icone, .legende-introduction .legende-icone, .legende-marque-page .legende-icone { color: var(--candle); }
+.legende-nom { display: block; }
+.legende-texte { display: block; color: var(--text-muted); font-size: 0.97rem; }
+.legende-guillemet { font-family: var(--font-title); font-size: 2.2rem; line-height: 1; color: var(--candle); }
+.legende-bouton-aa { font-family: Georgia, serif; font-weight: 700; font-size: 1.2rem; border: 1px solid var(--border-strong); border-radius: 8px; padding: 0.1rem 0.45rem; }
+.legende-rune { font-size: 0.8rem; }
+.legende-formes { display: inline-flex; gap: 2px; }
+
+.howto-carte {
+  margin-top: 1.2rem;
+  padding: 1.1rem 1.25rem 1.25rem;
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+.howto-carte h3 { font-size: 1.25rem; font-weight: 700; margin-bottom: 0.6rem; }
+.howto-carte h4 { font-size: 1.08rem; font-weight: 700; margin: 1.2rem 0 0.5rem; color: var(--candle); }
+.howto-carte p + p, .howto-texte > * + * { margin-top: 0.7rem; }
+.howto-texte ul { padding-left: 1.3rem; list-style: disc; }
+.howto-texte li + li { margin-top: 0.35rem; }
+.howto-pistes { display: grid; gap: 0.7rem; margin-top: 0.8rem; }
+.howto-piste { padding: 0.8rem 1rem; border-radius: var(--radius); border: 1px solid var(--border); border-left: 5px solid; background: var(--bg-elev); }
+.howto-piste.piste-verte { border-left-color: var(--piste-verte); }
+.howto-piste.piste-rouge { border-left-color: var(--piste-rouge); }
+.howto-piste.piste-noire { border-left-color: var(--piste-noire); }
+.howto-piste p + p { margin-top: 0.6rem; }
+.howto-piste-nom { display: flex; align-items: center; gap: 0.4rem; font-weight: 700; margin-bottom: 0.3rem; }
+.howto-piste.piste-rouge .howto-piste-nom { color: var(--piste-rouge); }
+.howto-piste.piste-verte .howto-piste-nom { color: var(--piste-verte); }
+.howto-etapes { list-style: none; padding: 0; display: grid; gap: 0.6rem; margin-top: 0.6rem; }
+.howto-etapes li { display: flex; gap: 0.6rem; padding: 0.7rem 0.9rem; border-radius: var(--radius); background: var(--bg-elev); border: 1px solid var(--border); }
+.howto-num { font-weight: 800; color: var(--candle); }
+.howto-fin { margin-top: 2rem; }
+
 /* ---------- Mouvement réduit ---------- */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
@@ -759,12 +891,16 @@ button.piste-entete:hover { background: var(--surface-2); }
 
 /* ---------- Impression (complétée en phase 3) ---------- */
 @media print {
-  .header, .no-print, .sommaire, .tiroir-fond, .marque-page { display: none !important; }
+  .header, .no-print, .sommaire, .tiroir-fond, .chapitre-nav, .skip-link { display: none !important; }
+  .marque-page { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   body { background: #fff; color: #000; }
   .page-chapitre { display: block; }
   .bloc { break-inside: avoid; box-shadow: none !important; }
-  .piste-corps[hidden] { display: block !important; }
-  html.impression-ciblee body * { visibility: hidden; }
-  html.impression-ciblee .a-imprimer, html.impression-ciblee .a-imprimer * { visibility: visible; }
-  html.impression-ciblee .a-imprimer { position: absolute; left: 0; top: 0; width: 100%; }
+  /* tout le contenu s'imprime, pistes repliées comprises */
+  .piste-corps.ferme { display: block !important; }
+  .piste-hint, .piste-entete .chevron { display: none !important; }
+  /* impression d'un seul exercice */
+  html.impression-ciblee body *:not(:has(.a-imprimer)):not(.a-imprimer):not(.a-imprimer *) { display: none !important; }
+  html.impression-ciblee .page, html.impression-ciblee main { padding: 0 !important; margin: 0 !important; }
+  html.impression-ciblee .a-imprimer .btn { display: none !important; }
 }

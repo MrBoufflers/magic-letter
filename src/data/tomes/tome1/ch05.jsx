@@ -65,7 +65,7 @@ export default {
         type: 'exercice',
         contenu: (
           <>
-          <p><Fl />Je travaille ma <strong>prise de notes</strong> : Gringotts, la banque des sorciers.</p>
+          <p>Je travaille ma <strong>prise de notes</strong> : Gringotts, la banque des sorciers.</p>
           <p><em>Note : La première partie des informations sur Gringott se trouve au début du chapitre à la page 71, mais le lecteur sera amené à y retourner</em> <Cle>à la fin de la page 80</Cle> <em>quand Hagrid et Harry s'y rendent physiquement. Ici aussi on voit que l'auteur a tout prévu, dans un roman on parle de</em> <strong><em>composition</em></strong> <em>comme en musique ! Cela veut dire que pour relever les caractéristiques de Gringotts <Cle>il faudra regarder dans ces deux passages du livre.</Cle></em></p>
           <p>Quelles sont selon vous les caractéristiques essentielles de Gringotts ? Faites une liste et donnez les explications nécessaires.</p>
           <Ligne n={6} />
@@ -86,7 +86,7 @@ export default {
         niveau: "rouge",
         contenu: (
           <>
-          <p>le <strong>labyrinthe</strong> est un territoire encore plus difficile que les montagnes ou les déserts pour les héros ! Quelle que soit sa taille, ou le monstre qui s'y cache, le labyrinthe donne l'impression à celui qui le traverse qu'il ne retrouvera jamais son chemin et lui fait perdre tout son courage ainsi que toute forme d'espoir ! <Cle>Ce désespoir est plus redoutable que tous les ennemis !</Cle></p>
+          <p>Le <strong>labyrinthe</strong> est un territoire encore plus difficile que les montagnes ou les déserts pour les héros ! Quelle que soit sa taille, ou le monstre qui s'y cache, le labyrinthe donne l'impression à celui qui le traverse qu'il ne retrouvera jamais son chemin et lui fait perdre tout son courage ainsi que toute forme d'espoir ! <Cle>Ce désespoir est plus redoutable que tous les ennemis !</Cle></p>
           </>
         ),
       },
@@ -95,7 +95,7 @@ export default {
         niveau: "noire",
         contenu: (
           <>
-          <p>cela nous amène à penser, évidemment, car nous sommes des lecteurs qui avons l'habitude de lire des histoires, que cet élément n'est pas donné gratuitement par l'auteur mais que tôt ou tard Harry sera amené à revenir à Gringotts et, peut-être, à se perdre dans le labyrinthe et affronter, peut-être, un dragon ! Ici également nous pouvons considérer que JK Rowling installe ces éléments dès le début du récit pour donner au lecteur l'envie d'avancer dans l'histoire, c'est-à-dire de renforcer son <strong>intrigue</strong>.</p>
+          <p>Cela nous amène à penser, évidemment, car nous sommes des lecteurs qui avons l'habitude de lire des histoires, que cet élément n'est pas donné gratuitement par l'auteur mais que tôt ou tard Harry sera amené à revenir à Gringotts et, peut-être, à se perdre dans le labyrinthe et affronter, peut-être, un dragon ! Ici également nous pouvons considérer que JK Rowling installe ces éléments dès le début du récit pour donner au lecteur l'envie d'avancer dans l'histoire, c'est-à-dire de renforcer son <strong>intrigue</strong>.</p>
           </>
         ),
       },
@@ -119,7 +119,7 @@ export default {
         niveau: "noire",
         contenu: (
           <>
-          <p>Les <Fl />pistes noires<Fl />, vous <Cle>pouvez refaire l’exercice de la prise de notes</Cle> en travaillant sur le monde des sorciers ! <Cle>Comme vous l’avez fait pour Gringotts, relevez les caractéristiques essentielles que le lecteur découvre dans ce passage.</Cle></p>
+          <p>Les pistes noires, vous <Cle>pouvez refaire l’exercice de la prise de notes</Cle> en travaillant sur le monde des sorciers ! <Cle>Comme vous l’avez fait pour Gringotts, relevez les caractéristiques essentielles que le lecteur découvre dans ce passage.</Cle></p>
           <p><strong>Caractéristiques essentielles du monde des sorciers</strong> (pistes noires) <Fl /> Les réponses figurent au dos de la page quand vous aurez terminé</p>
           <Ligne n={11} />
           </>

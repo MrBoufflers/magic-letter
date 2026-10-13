@@ -11,8 +11,7 @@ export default {
   {
     blocs: [
       {
-        type: 'piste',
-        niveau: "verte",
+        type: 'introduction',
         contenu: (
           <>
           <p><em>Vous avez peut être déjà vu en classe qu’il existe en littérature trois types de « points de vue » : le point de vue interne (le narrateur fait partie de l’histoire), le narrateur externe (le narrateur est extérieur à l’histoire) et le point de vue omniscient (le narrateur sait tout ce qui se passe dans l’univers du livre, il connaît même les sentiments du personnage !</em></p>
@@ -115,7 +114,7 @@ export default {
         niveau: "noire",
         contenu: (
           <>
-          <p>à partir de ce moment-là Harry commence à devoir prendre ses responsabilités : il n'agit plus seulement pour lui-même mais les espoirs placés en lui lui donnent une forme <Cle>d'obligation de résultats</Cle>… Jusqu'ici, la seule chose que risquait Harry, à part quelques frissons dans les couloirs obscurs de Poudlard, c'était une mauvaise punition, des heures de colle ou, au pire, un renvoi de l'établissement ! C'est-à-dire que Harry dans son parcours de héros, <Cle>avait encore plus ou moins une vie d'élève (presque) normal</Cle> . Mais désormais, <Cle>le regard des autres et la pression sociale vont faire de lui un adolescent</Cle> : il n'est pas encore un homme mais il doit déjà comprendre le fonctionnement de la société… et l’accepter ! Ce qui est plus difficile que d'éviter les punitions… Comme dans toutes les bonnes histoires, au fur et à mesure de la progression du personnage les <strong>enjeux</strong> s'élèvent et les petits obstacles <strong>(opposants)</strong> deviennent de grands obstacles. C'est l'art des grands <strong>narrateurs</strong> que de faire comprendre en douceur que les petits obstacles de l'histoire ont amené les grands obstacles qui arrivent ensuite, et que leur <Cle>apparition dans le récit est naturelle et non forcée.</Cle> Ici, cette accélération prend place à peu près aux deux tiers du livre et l'on se doute alors que <Cle>les vrais ennuis vont bientôt commencer</Cle> !</p>
+          <p>À partir de ce moment-là Harry commence à devoir prendre ses responsabilités : il n'agit plus seulement pour lui-même mais les espoirs placés en lui lui donnent une forme <Cle>d'obligation de résultats</Cle>… Jusqu'ici, la seule chose que risquait Harry, à part quelques frissons dans les couloirs obscurs de Poudlard, c'était une mauvaise punition, des heures de colle ou, au pire, un renvoi de l'établissement ! C'est-à-dire que Harry dans son parcours de héros, <Cle>avait encore plus ou moins une vie d'élève (presque) normal</Cle> . Mais désormais, <Cle>le regard des autres et la pression sociale vont faire de lui un adolescent</Cle> : il n'est pas encore un homme mais il doit déjà comprendre le fonctionnement de la société… et l’accepter ! Ce qui est plus difficile que d'éviter les punitions… Comme dans toutes les bonnes histoires, au fur et à mesure de la progression du personnage les <strong>enjeux</strong> s'élèvent et les petits obstacles <strong>(opposants)</strong> deviennent de grands obstacles. C'est l'art des grands <strong>narrateurs</strong> que de faire comprendre en douceur que les petits obstacles de l'histoire ont amené les grands obstacles qui arrivent ensuite, et que leur <Cle>apparition dans le récit est naturelle et non forcée.</Cle> Ici, cette accélération prend place à peu près aux deux tiers du livre et l'on se doute alors que <Cle>les vrais ennuis vont bientôt commencer</Cle> !</p>
           </>
         ),
       },
@@ -139,7 +138,7 @@ export default {
         niveau: "verte",
         contenu: (
           <>
-          <p>voici une phrase qui en dit long sur le lien très spécial qui unit les deux personnages.</p>
+          <p>Voici une phrase qui en dit long sur le lien très spécial qui unit les deux personnages.</p>
           </>
         ),
       },
@@ -223,7 +222,7 @@ export default {
         contenu: (
           <>
           <Definition terme="Champ lexical">
-            <p>ensemble de mots qui entretiennent un lien avec un même thème</p>
+            <p>Ensemble de mots qui entretiennent un lien avec un même thème</p>
           </Definition>
           </>
         ),
@@ -296,7 +295,7 @@ export default {
         niveau: "rouge",
         contenu: (
           <>
-          <p>première astuce de la narration, la pierre philosophale est arrivée à Poudlard en même temps que Harry <Cle>mais le narrateur n'en a pas parlé</Cle> ! C'est-à-dire qu'un événement ( la quête de pouvoir de Voldemort) va provoquer deux conséquences (la trajectoire de Harry et l'arrivée de la pierre philosophale à Poudlard) mais le narrateur « oublie » complètement de parler de la seconde… c'est la raison pour laquelle Harry voyait se passer de nombreux phénomènes autour de lui qui ne pouvait pas s'expliquer… En fait, comme dans de nombreuses énigmes policières, le lecteur partage le <strong>point de vue subjectif</strong> d'un personnage, et il se retrouve un petit peu coincé dedans… C’est un mécanisme classique dans les romans policiers !</p>
+          <p>Première astuce de la narration, la pierre philosophale est arrivée à Poudlard en même temps que Harry <Cle>mais le narrateur n'en a pas parlé</Cle> ! C'est-à-dire qu'un événement ( la quête de pouvoir de Voldemort) va provoquer deux conséquences (la trajectoire de Harry et l'arrivée de la pierre philosophale à Poudlard) mais le narrateur « oublie » complètement de parler de la seconde… c'est la raison pour laquelle Harry voyait se passer de nombreux phénomènes autour de lui qui ne pouvait pas s'expliquer… En fait, comme dans de nombreuses énigmes policières, le lecteur partage le <strong>point de vue subjectif</strong> d'un personnage, et il se retrouve un petit peu coincé dedans… C’est un mécanisme classique dans les romans policiers !</p>
           </>
         ),
       },

@@ -1,4 +1,4 @@
-import { Cle, Fl, Ligne, FichePersonnage, Etoiles } from '../../../components/contenu';
+import { Cle, Notion, Fl, Ligne, FichePersonnage } from '../../../components/contenu';
 
 export default {
   id: 'tome-1-incipit',
@@ -6,6 +6,7 @@ export default {
   numero: 0,
   titre: "Incipit : la porte d'entrée du texte",
   motsCles: ["incipit", "hiérarchie", "portrait", "indice spatio-temporel", "caractéristiques", "psychologie du personnage", "procédé littéraire", "péripéties"],
+  banniere: "Attention, nous nous arrêtons tout de suite au bas de la page 7 !",
   resume: "Travail à réaliser à la fin de la lecture de la première page du récit. A retenir en priorité : les notions de champ lexical et de hiérarchie des informations !",
   arrets: [
   {
@@ -18,13 +19,13 @@ export default {
         contenu: (
           <>
           <p>Un <strong>incipit</strong> est <Cle>la porte d'entrée du texte</Cle>, ce sont les premières lignes ou les premiers paragraphes d'une histoire, mais cela est aussi valable pour bien d’autres types de texte. Parler de l'incipit d'un texte, <Cle>c'est commenter la première impression que l'on peut avoir quand on entre dedans</Cle>. Un peu comme quand on prend la température de l’eau avant de plonger ! Voyons donc comment commence la série de livres <em>Harry Potter</em>.</p>
-          <p><Cle>L’incipit de</Cle> <em><Cle>Harry Potter à l’école des sorciers</Cle></em> <Cle>:</Cle></p>
           </>
         ),
       },
       {
         type: 'citation',
         page: 7,
+        titre: <><Cle>L’incipit de</Cle> <em><Cle>Harry Potter à l’école des sorciers</Cle></em>{' '}<Cle>:</Cle></>,
         texte: (
           <>
           <p>« Monsieur et Mrs Dursley qui habitaient au 4, Privet Drive, avaient toujours affirmé avec la plus grande fierté qu'ils étaient parfaitement normaux, merci pour eux. <strong>Jamais quiconque n’aurait imaginé</strong> qu'ils puissent se trouver impliqués dans quoi que ce soit <strong>d'étrange ou de mystérieux</strong>. Ils n'avaient pas de temps à perdre avec des sornettes. »</p>
@@ -37,7 +38,7 @@ export default {
         contenu: (
           <>
           <p>On peut remarquer d’entrée que J.K. Rowling est une auteure très précise, elle construit ses phrases avec beaucoup de soin ! Voyons deux petits exemples…</p>
-          <p><em><Fl /> Jamais quiconque n’aurait imaginé</em>… <Fl /> Cette tournure de phrase montre que les Dursley sont très soucieux du <em>qu’en-dira-t-on</em>, c'est-à-dire des histoires que se racontent les voisins sur leur compte. Ils tiennent à leur réputation qu'ils veulent PARFAITE. Les Dursley sont des gens orgueilleux.</p>
+          <p>« <em>Jamais quiconque n’aurait imaginé</em>… » <Fl /> Cette tournure de phrase montre que les Dursley sont très soucieux du <em>qu’en-dira-t-on</em>, c'est-à-dire des histoires que se racontent les voisins sur leur compte. Ils tiennent à leur réputation qu'ils veulent PARFAITE. Les Dursley sont des gens orgueilleux.</p>
           </>
         ),
       },
@@ -55,7 +56,7 @@ export default {
         niveau: "verte",
         contenu: (
           <>
-          <p><strong><em><Fl /></em></strong><em>….d’étrange et le mystérieux</em> <Fl /> ces deux mots sont associés au monde de la sorcellerie, même si le lecteur ne le sait pas encore ! L'incipit de ce livre pose d’emblée la problématique de départ : <Cle>les parents Dursley détestent tout ce qui attire Harry, et même tout ce qu’il est</Cle>, on peut donc s’attendre à ce qu’ils lui créent des problèmes ! Comme nous le verrons plus tard, les parents Dursley sont des <strong>opposants</strong>.</p>
+          <p>« <em>…d’étrange ou de mystérieux</em> » <Fl /> ces deux mots sont associés au monde de la sorcellerie, même si le lecteur ne le sait pas encore ! L'incipit de ce livre pose d’emblée la problématique de départ : <Cle>les parents Dursley détestent tout ce qui attire Harry, et même tout ce qu’il est</Cle>, on peut donc s’attendre à ce qu’ils lui créent des problèmes ! Comme nous le verrons plus tard, les parents Dursley sont des <strong>opposants</strong>.</p>
           </>
         ),
       },
@@ -69,7 +70,7 @@ export default {
         type: 'exercice',
         contenu: (
           <>
-          <p>le <strong>Champ lexical</strong> de la sorcellerie : <Cle>Ce sont tous les mots qui ont quelque chose à voir avec la sorcellerie !</Cle></p>
+          <p>Le <strong>Champ lexical</strong> de la sorcellerie : <Cle>Ce sont tous les mots qui ont quelque chose à voir avec la sorcellerie !</Cle></p>
           <p><em>Baguette-sort- lune - balai - formule - sort - potion - étrange - mystérieux</em>…sont dans le champ lexical de la sorcellerie, et certains sont dans le texte !</p>
           <p>Je trouve quatre autres mots du champ lexical de la sorcellerie (en général, pas forcément dans le texte) :</p>
           <Ligne n={3} />
@@ -105,35 +106,33 @@ export default {
           </>
         ),
       },
-      /* encadré */
       {
         type: 'piste',
-        niveau: "verte",
+        niveau: 'verte',
+        etoiles: 5,
         contenu: (
           <>
-          <Etoiles n={5} />
-          <p><strong><Fl /></strong> Souvent les élèves, en cours de français, oublient cette règle fondamentale et ne comprennent pas pourquoi leur réponse ne leur rapporte pas beaucoup de points ! (c’est ce qu’ils disent). DANS VOS RÉPONSES, <strong>NE PARLEZ QUE DES INFORMATIONS CINQ ÉTOILES, LES AUTRES NE NOUS INTÉRESSENT PAS.</strong></p>
+          <p>Souvent les élèves, en cours de français, oublient cette règle fondamentale et ne comprennent pas pourquoi leur réponse ne leur rapporte pas beaucoup de points ! (c’est ce qu’ils disent). DANS VOS RÉPONSES, <strong>NE PARLEZ QUE DES INFORMATIONS CINQ ÉTOILES, LES AUTRES NE NOUS INTÉRESSENT PAS.</strong></p>
           </>
         ),
       },
-      /* encadré */
       {
         type: 'piste',
-        niveau: "verte",
+        niveau: 'verte',
+        etoiles: 5,
         contenu: (
           <>
-          <Etoiles n={5} />
           <p><Cle>Voici une autre information cinq étoile de ce dossier :</Cle></p>
           <p><strong>VOICI <Cle>LES INFORMATIONS DONT IL FAUT PARLER EN LITTÉRATURE ET EN ÉVALUATION DE FRANÇAIS :</Cle></strong></p>
           <p><strong><Cle>En littérature, certaines informations vont</Cle> <em><Cle>presque toujours</Cle></em> <Cle>avoir la valeur de 5 étoiles…</Cle></strong></p>
           <p><strong><Cle>Quand je prends des notes de lecture j’essaye d’être particulièrement attentif aux points suivants :</Cle></strong></p>
-          <p>1/ Ce qui parle d'un changement de <strong>lieu</strong> ou d'un changement de <strong>temps</strong> dans l'histoire (ces informations sont tellement importantes qu'elles ont un nom spécial : ce sont <strong>les indices spatio-temporels</strong>).</p>
-          <p>2/ La rencontre de <strong>personnages</strong> importants qui vont aider le héros (les adjuvants) ou de ceux qui vont empêcher le héros (les opposants) de faire ce qu’il a à faire.</p>
-          <p>3/ Ce qui parle du <strong>destin</strong> d'un personnage important, c'est-à-dire les événements qui bouleversent sa vie.</p>
-          <p>4/ Tout ce qui concerne les <strong>objets</strong> les plus importants, qui vont eux aussi avoir un rôle dans la suite de l'histoire : par exemple on se doute bien que si Harry Potter casse sa baguette magique il va être en grande difficulté ! Ce qui a un rapport avec la baguette magique d'Harry Potter doit probablement être considéré comme une information 5 étoiles (enfin, seulement si cela change la direction de l'histoire ! Ne notez pas qu'il la pose sur sa table de nuit quand il va prendre sa douche).</p>
-          <p>5/ Les principaux <strong>événements</strong> de l'histoire qui vont avoir une influence sur la quête du héros. (la <strong>quête du héros</strong> correspond à l'objectif qu'il doit attendre <Cle>pour retrouver en état de bonheur stable</Cle>). Dans le <strong>schéma narratif</strong> ces événements sont appelés <strong>péripéties</strong>.</p>
-          <p>6/ Tout ce qui est <strong>surprenant pour le lecteur</strong> : retournement de situation, trahison d'un personnage, événement imprévisible, coup de pouce du destin ou punition divine… les auteurs écrivent des textes <Cle>mais fabriquent aussi des</Cle> <strong><Cle>expériences de lecture</Cle></strong><Cle>, il faut y penser !</Cle></p>
-          <p>7/ Tout ce qui marque la transformation d'un personnage et notamment ce qui lui fait franchir un <strong>niveau (</strong>nous reviendrons sur ce point importantissime).</p>
+          <p>1/ Ce qui parle d'un changement de <Notion n={0}>lieu</Notion> ou d'un changement de <Notion n={1}>temps</Notion> dans l'histoire (ces informations sont tellement importantes qu'elles ont un nom spécial : ce sont <strong>les indices spatio-temporels</strong>).</p>
+          <p>2/ La rencontre de <Notion n={2}>personnages</Notion> importants qui vont aider le héros (les adjuvants) ou de ceux qui vont empêcher le héros (les opposants) de faire ce qu’il a à faire.</p>
+          <p>3/ Ce qui parle du <Notion n={3}>destin</Notion> d'un personnage important, c'est-à-dire les événements qui bouleversent sa vie.</p>
+          <p>4/ Tout ce qui concerne les <Notion n={4}>objets</Notion> les plus importants, qui vont eux aussi avoir un rôle dans la suite de l'histoire : par exemple on se doute bien que si Harry Potter casse sa baguette magique il va être en grande difficulté ! Ce qui a un rapport avec la baguette magique d'Harry Potter doit probablement être considéré comme une information 5 étoiles (enfin, seulement si cela change la direction de l'histoire ! Ne notez pas qu'il la pose sur sa table de nuit quand il va prendre sa douche).</p>
+          <p>5/ Les principaux <Notion n={5}>événements</Notion> de l'histoire qui vont avoir une influence sur la quête du héros. (la <Notion n={6}>quête du héros</Notion> correspond à l'objectif qu'il doit attendre <Cle>pour retrouver en état de bonheur stable</Cle>). Dans le <Notion n={7}>schéma narratif</Notion> ces événements sont appelés <Notion n={8}>péripéties</Notion>.</p>
+          <p>6/ Tout ce qui est <Notion n={9}>surprenant pour le lecteur</Notion> : retournement de situation, trahison d'un personnage, événement imprévisible, coup de pouce du destin ou punition divine… les auteurs écrivent des textes <Cle>mais fabriquent aussi des</Cle> <Notion n={10}><Cle>expériences de lecture</Cle></Notion><Cle>, il faut y penser !</Cle></p>
+          <p>7/ Tout ce qui marque la transformation d'un personnage et notamment ce qui lui fait franchir un <Notion n={11}>niveau</Notion> (nous reviendrons sur ce point importantissime).</p>
           </>
         ),
       },
@@ -174,7 +173,7 @@ export default {
         niveau: "rouge",
         contenu: (
           <>
-          <p>la <strong>psychologie d'un personnage</strong> est <Cle>l'ensemble des éléments qui expliquent le comportement d'un personnage dans l'histoire</Cle>. Souvent, les accidents de la vie laissent des traces et peuvent changer les sentiments d’une personne ! Harry, par exemple, n’a jamais connu ses parents et se sent donc toujours un peu seul… Il va lui falloir du temps pour retrouver confiance en lui ! Je vous invite à être attentif au développement de cet aspect dans l’histoire, mais nous en reparlerons surtout dans Harry Potter et le Prisonnier d’Azkaban.</p>
+          <p>La <strong>psychologie d'un personnage</strong> est <Cle>l'ensemble des éléments qui expliquent le comportement d'un personnage dans l'histoire</Cle>. Souvent, les accidents de la vie laissent des traces et peuvent changer les sentiments d’une personne ! Harry, par exemple, n’a jamais connu ses parents et se sent donc toujours un peu seul… Il va lui falloir du temps pour retrouver confiance en lui ! Je vous invite à être attentif au développement de cet aspect dans l’histoire, mais nous en reparlerons surtout dans Harry Potter et le Prisonnier d’Azkaban.</p>
           </>
         ),
       },

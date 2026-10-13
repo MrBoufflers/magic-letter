@@ -34,7 +34,7 @@ export default function Sommaire({ tome, ouvert, onFermer }) {
             <li key={c.id}>
               <NavLink to={`/tome/${tome.slug}/${c.slug}`} onClick={onFermer}>
                 <span className="sommaire-num">{libelleChapitre(c)}</span>
-                <span>{c.titre}</span>
+                {c.titre && <span>{c.titre}</span>}
               </NavLink>
             </li>
           ))}

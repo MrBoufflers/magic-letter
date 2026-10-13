@@ -11,11 +11,18 @@ export default {
   {
     blocs: [
       {
+        type: 'introduction',
+        contenu: (
+          <>
+          <p><em>Dans ce chapitre nous allons poursuivre notre analyse du travail d’écriture de J.K Rowling. Mais vous avez déjà révisé un certain nombre de notions pour arriver jusqu’ici ! Nous allons donc désormais donner la priorité, comme dans le chapître précédent, à l’explication de certaines phrases de ce texte.</em></p>
+          </>
+        ),
+      },
+      {
         type: 'piste',
         niveau: "verte",
         contenu: (
           <>
-          <p><em>Dans ce chapitre nous allons poursuivre notre analyse du travail d’écriture de J.K Rowling. Mais vous avez déjà révisé un certain nombre de notions pour arriver jusqu’ici ! Nous allons donc désormais donner la priorité, comme dans le chapître précédent, à l’explication de certaines phrases de ce texte.</em></p>
           <p>Attention, ce début de commentaire est réservé aux lecteurs en piste rouge et piste noire ! Pour les autres, vous allez descendre jusqu’à la balise <strong><Fl /> p188.</strong></p>
           </>
         ),
@@ -101,7 +108,7 @@ export default {
         niveau: "rouge",
         contenu: (
           <>
-          <p>c'est la raison pour laquelle on utilise souvent l'expression « nouer une <strong>intrigue</strong> » quand on parle d'un auteur qui fabrique une histoire bien écrite dans laquelle les héros sont confrontés <Cle>à plusieurs problèmes en même temps</Cle>…. Chaque problème est déroulé comme un fil tout au long de l'histoire, et <Cle>quand il y a plusieurs fils cela permet au lecteur de passer de l'un à l'autre et de ne pas s'ennuyer</Cle>… par contre, pour l'<strong>auteur</strong>, c'est un exercice difficile car il ne faut pas s'emmêler les pinceaux !</p>
+          <p>C'est la raison pour laquelle on utilise souvent l'expression « nouer une <strong>intrigue</strong> » quand on parle d'un auteur qui fabrique une histoire bien écrite dans laquelle les héros sont confrontés <Cle>à plusieurs problèmes en même temps</Cle>…. Chaque problème est déroulé comme un fil tout au long de l'histoire, et <Cle>quand il y a plusieurs fils cela permet au lecteur de passer de l'un à l'autre et de ne pas s'ennuyer</Cle>… par contre, pour l'<strong>auteur</strong>, c'est un exercice difficile car il ne faut pas s'emmêler les pinceaux !</p>
           </>
         ),
       },
@@ -145,7 +152,7 @@ export default {
         niveau: "noire",
         contenu: (
           <>
-          <p>on remarquera que cette métaphore (« Flint semblait avoir du sang de troll dans les veines ») dit au premier degré que Flint devait avoir une force surhumaine ce jour-là… Mais quand on se rappelle de la présentation du troll dans le chapitre précédent (les trolls ont, rappelez-vous, la tête de la taille d’une noix de coco alors qu’ils font quatre mètres de hauteur), on peut se demander si au deuxième degré ce commentaire ne serait pas un petit peu négatif en même temps ! C’est ce qu’on appelle une <strong>connotation</strong>, une deuxième idée qui est cachée derrière la première…</p>
+          <p>On remarquera que cette métaphore (« Flint semblait avoir du sang de troll dans les veines ») dit au premier degré que Flint devait avoir une force surhumaine ce jour-là… Mais quand on se rappelle de la présentation du troll dans le chapitre précédent (les trolls ont, rappelez-vous, la tête de la taille d’une noix de coco alors qu’ils font quatre mètres de hauteur), on peut se demander si au deuxième degré ce commentaire ne serait pas un petit peu négatif en même temps ! C’est ce qu’on appelle une <strong>connotation</strong>, une deuxième idée qui est cachée derrière la première…</p>
           </>
         ),
       },
@@ -159,7 +166,7 @@ export default {
         type: 'exercice',
         contenu: (
           <>
-          <p>nous suivons le match de Quidditch par le commentaire qu'en fait Lee Jordan, un ami des Weasley. (celui qui avait une nouvelle tarentule et qui parlait d'un nouveau passage secret pour sortir de Poudlard plus tôt dans l'histoire).</p>
+          <p>Nous suivons le match de Quidditch par le commentaire qu'en fait Lee Jordan, un ami des Weasley. (celui qui avait une nouvelle tarentule et qui parlait d'un nouveau passage secret pour sortir de Poudlard plus tôt dans l'histoire).</p>
           <ul>
             <li>Je relève la liste des <strong>verbes</strong> utilisés dans cette scène (jusqu'à « Gryffondor marque ») qui, comme il se doit, décrivent une succession <strong>d'actions</strong>.</li>
           </ul>
@@ -167,8 +174,8 @@ export default {
           <ul>
             <li>Je m'entraîne à <strong>l'oral</strong> pour jouer le rôle du commentateur. C'est un type <strong>d'interprétation</strong> que vous avez l'habitude d'entendre, je pense que vous serez tout à fait capable de le faire de façon convaincante ! Mais avant de commencer voyons rappelons quelques remarques :</li>
           </ul>
-          <p><strong><Cle><Fl />Définition</Cle></strong> : <Cle>Interprétation</Cle> : en poésie ou en musique, art de présenter une œuvre de façon personnelle mais en respectant les volontés de l'auteur.</p>
-          <p><strong><Fl /></strong>Pour cet exercice vous pouvez inventer un ton de voix particulier pour Lee Jordan (peut-être a-t-il une voix aigüe ? un accent ? un cheveux sur la langue ? Essayez plusieurs solutions et choisissez la meilleure !) mais vous ne pouvez pas sortir de certains cadres définis par l'histoire : <Cle>Lee Jordan est un Gryffondor, donc il doit être enthousiaste</Cle> quand son équipe gagne et, <Cle>par ailleurs, c'est un garnement qui aime bien faire des bêtises</Cle>… Mais on lui a confié une tâche plutôt prestigieuse, donc il va probablement essayer de faire les choses correctement, mais avec une petite pointe d'humour ou de cabotinage !</p>
+          <p><strong><Cle>Définition</Cle></strong> : <Cle>Interprétation</Cle> : en poésie ou en musique, art de présenter une œuvre de façon personnelle mais en respectant les volontés de l'auteur.</p>
+          <p>Pour cet exercice vous pouvez inventer un ton de voix particulier pour Lee Jordan (peut-être a-t-il une voix aigüe ? un accent ? un cheveux sur la langue ? Essayez plusieurs solutions et choisissez la meilleure !) mais vous ne pouvez pas sortir de certains cadres définis par l'histoire : <Cle>Lee Jordan est un Gryffondor, donc il doit être enthousiaste</Cle> quand son équipe gagne et, <Cle>par ailleurs, c'est un garnement qui aime bien faire des bêtises</Cle>… Mais on lui a confié une tâche plutôt prestigieuse, donc il va probablement essayer de faire les choses correctement, mais avec une petite pointe d'humour ou de cabotinage !</p>
           </>
         ),
       },
@@ -198,7 +205,7 @@ export default {
         niveau: "verte",
         contenu: (
           <>
-          <p>commentaire <strong>ironique</strong> de Lee Jordan qui n'a pas le droit de dire c'est véritables sentiments « Flint à failli tuer l'attrapeur de Gryffondor, ce qui aurait pu arriver à n'importe qui ». Evidemment, ce n’est pas ce qu’il pense, il n’y a que les Serpentard qui jouent comme ça ! Dans le sport moldu du football on appellerait ce type de joueurs des « bouchers »…</p>
+          <p>Commentaire <strong>ironique</strong> de Lee Jordan qui n'a pas le droit de dire c'est véritables sentiments « Flint à failli tuer l'attrapeur de Gryffondor, ce qui aurait pu arriver à n'importe qui ». Evidemment, ce n’est pas ce qu’il pense, il n’y a que les Serpentard qui jouent comme ça ! Dans le sport moldu du football on appellerait ce type de joueurs des « bouchers »…</p>
           </>
         ),
       },
@@ -253,7 +260,7 @@ export default {
         niveau: "verte",
         contenu: (
           <>
-          <p>petit coup de pouce du <strong>destin</strong>, il semblerait que Harry dans sa chute a failli avaler le Vif d'or.</p>
+          <p>Petit coup de pouce du <strong>destin</strong>, il semblerait que Harry dans sa chute a failli avaler le Vif d'or.</p>
           </>
         ),
       },
@@ -278,7 +285,7 @@ export default {
         contenu: (
           <>
           <p>Nicolas Flamel est selon la légende fameux père de l'alchimie, c'est-à-dire des apprentis magiciens du moyen-âge qui essayaient de transformer le plomb en or.</p>
-          <p>NOTE : Si vous voulez chercher des connaissances à propos de quelque chose ou à propos d’ un nom propre, je vous conseille d'utiliser le site <Lien href="http://vikidia.fr">vikidia.fr</Lien> qui est adapté aux élèves de 6e/5e et dont les articles ne sont pas trop longs. Mais parfois, sur Wikipédia, on peut trouver des renseignements très précis ! Ici, par exemple, pour les <Fl />&gt;pistes noires<Fl /> et les fanatiques de Harry Potter, voici une courte biographie du <Cle>vrai</Cle> Nicolas Flamel qui date de 1578 :</p>
+          <p>NOTE : Si vous voulez chercher des connaissances à propos de quelque chose ou à propos d’ un nom propre, je vous conseille d'utiliser le site <Lien href="http://vikidia.fr">vikidia.fr</Lien> qui est adapté aux élèves de 6e/5e et dont les articles ne sont pas trop longs. Mais parfois, sur Wikipédia, on peut trouver des renseignements très précis ! Ici, par exemple, pour les pistes noires et les fanatiques de Harry Potter, voici une courte biographie du <Cle>vrai</Cle> Nicolas Flamel qui date de 1578 :</p>
           <p><em>Nicolas Flamel, Parisien, lequel de pauvre escrivain qu'il estoit, & ayant trouvé en un vieil livre une recepte métallique qu'il esprouva fut l'un des plus riches de son temps, temoings en sont les superbes bastiments qu'il a faicts au cemetiere S. Innocents, à Saincte Geneviefve des ardens, à S. Jaques la Boucherie, où il est en demy relief, avec son escritoire au costé, & le chaperon sur l'espaule estimé riche luy & sa Perronelle (c'estoit sa femme) de quinze cens mille escus, outre les aumosnes & dotations immenses qu'il feist</em> ».</p>
           <p>On pourra traduire le début de cette notice (on dirait plus exactement <em>réécrire en français moderne</em>, car on peut voir ici que la <strong>langue française</strong> a quand même évolué en quatre siècles et il faut remettre les choses au goût du jour !) rapidement par :</p>
           <p><em>Nicolas Flamel qui était un pauvre écrivain a un jour trouvé une recette de transformation de métal dans un vieux livre et il est devenu l'un des personnages les plus riches de son temps, en sont témoins les superbes constructions qu'il a faites…</em></p>

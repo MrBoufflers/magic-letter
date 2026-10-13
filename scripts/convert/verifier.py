@@ -19,11 +19,13 @@ EMOJI = re.compile('[\U0001F000-\U0001FAFF☀-➿️]')
 def norm(t):
     t = EMOJI.sub('', t)
     t = re.sub(r'\{(HR|IMG:[^}]*)\}', '', t)
-    t = re.sub(r'(》|>)+\s*_*\s*(\*\*)?(Pistes?\s+(très\s+)?(rouge|noire|verte|bleue/rouge|bleue)s?|Complètement hors-piste)\s*(\*\*)?_*\s*(》|>)+', '', t, flags=re.I)
+    t = re.sub(r'(》|>)+\s*_*\s*(\*\*)?\s*(Pistes?\s+(\(?très\)?\s+)?(rouge\s*/\s*noire|rouge|noire|verte|bleue/rouge|bleue)s?|(Complètement )?hors-piste)\s*(\*\*)?_*\s*(》|>)+', '', t, flags=re.I)
+    t = re.sub(r'(?i)^\s*piste verte\s*:?\s*$', '', t)
     t = re.sub(r'(?i)^\s*(>\s*)*EXERCICE\b', '', t)
     t = t.replace('》', '').replace('>', '').replace('_', '').replace('*', '')
     t = re.sub(r'[:;]', '', t)
-    return re.sub(r'[\s  ]+', '', t)
+    # la casse est ignorée : majuscules de début de capsule ajoutées à la demande d'Oni
+    return re.sub(r'[\s\u00a0\u202f]+', '', t).casefold()
 
 
 def paragraphs(items):

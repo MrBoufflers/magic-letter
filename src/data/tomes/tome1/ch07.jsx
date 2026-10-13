@@ -1,4 +1,4 @@
-import { Cle, Fl, Blanc, Ligne } from '../../../components/contenu';
+import { Cle, Blanc, Ligne } from '../../../components/contenu';
 
 export default {
   id: 'tome-1-chapitre-7',
@@ -22,11 +22,10 @@ export default {
         ),
       },
       {
-        type: 'piste',
-        niveau: "verte",
+        type: 'introduction',
         contenu: (
           <>
-          <p><strong><em><Fl /></em></strong> <em>Ce chapitre s’appelle « Le chapeau magique » mais, comme nous allons le voir, ce n’est pas vraiment le chapeau qui va réserver des surprises dans cette partie du texte !</em></p>
+          <p><em>Ce chapitre s’appelle « Le chapeau magique » mais, comme nous allons le voir, ce n’est pas vraiment le chapeau qui va réserver des surprises dans cette partie du texte !</em></p>
           <p><em>Le narrateur a plutôt l’intention de nous raconter la <Cle>première exploration de Poudlard</Cle> par les élèves, <Cle>c'est-à-dire qu’il installe un certain nombre de règles qui concernent les lieux principaux de cette histoire</Cle>. C’est tellement important dans les histoires que l’on a un nom pour tous les renseignements qui parlent du lieu ou du déroulement du temps : cela s’appelle les</em> <strong><em>indices spatio-temporels</em></strong><em>.</em></p>
           <p><em>Dans ce chapitre nous allons voir <Cle>comment J.K. Rowling met en place le décor de son histoire et comment elle nous fait découvrir Poudlard</Cle>, un lieu qui réserve bien des surprises aux nouveaux élèves… et au lecteur moldu ! Relevons donc les points les plus importants qui font l’identité unique de ce château.</em></p>
           </>
@@ -62,7 +61,7 @@ export default {
         niveau: "noire",
         contenu: (
           <>
-          <p>le <strong>point de vue subjectif</strong> consiste à épouser, pour une raison ou pour une autre, <Cle>le point de vue d'un personnage</Cle>. Cela implique également que pour cette même scène l'<Cle>on en choisira pas d'autre</Cle> ! Il serait par exemple étonnant de raconter le même épisode en prenant le point de vue de Hagrid qui voit autour de lui des élèves apeurés et silencieux comme un troupeau de moutons perdus !</p>
+          <p>Le <strong>point de vue subjectif</strong> consiste à épouser, pour une raison ou pour une autre, <Cle>le point de vue d'un personnage</Cle>. Cela implique également que pour cette même scène l'<Cle>on en choisira pas d'autre</Cle> ! Il serait par exemple étonnant de raconter le même épisode en prenant le point de vue de Hagrid qui voit autour de lui des élèves apeurés et silencieux comme un troupeau de moutons perdus !</p>
           </>
         ),
       },
@@ -131,7 +130,7 @@ export default {
         niveau: "verte",
         contenu: (
           <>
-          <p>une vingtaine de fantômes hantent Poudlard et Peeves, l'un d'entre eux, (mais il n'est pas vraiment un fantôme), semble faire plus de bêtises que les autres.</p>
+          <p>Une vingtaine de fantômes hantent Poudlard et Peeves, l'un d'entre eux, (mais il n'est pas vraiment un fantôme), semble faire plus de bêtises que les autres.</p>
           </>
         ),
       },
@@ -146,7 +145,7 @@ export default {
         niveau: "verte",
         contenu: (
           <>
-          <p><strong>description</strong> de la Grande Salle.</p>
+          <p><strong>Description</strong> de la Grande Salle.</p>
           </>
         ),
       },
@@ -170,7 +169,7 @@ export default {
         niveau: "rouge",
         contenu: (
           <>
-          <p>p124 :</p>
+          <p>P124 :</p>
           <p>Le plafond de la Grande Salle (qui est centrale dans la vie d'un élève à Poudlard) représente le ciel étoilé, c'est une belle idée qui signifie que de venir comme élève à Poudlard c'est plus ou moins <Cle>avoir accès à un lieu rempli d'étoiles</Cle> ! (c’est aussi l’idée que vous devriez avoir de votre collège ).</p>
           <p>On dira ici que le ciel ici est un <strong>symbole,</strong> c'est-à-dire <Cle>qu'il sert de code pour une autre idée</Cle>. C'est la même chose que quand on fait voler quelque part une série de colombes quelque part pour montrer que la paix habite dans ce lieu.</p>
           </>
@@ -197,7 +196,7 @@ export default {
         niveau: "verte",
         contenu: (
           <>
-          <p>c'est le Choixpeau lui-même qui va donner la règle de répartition des différentes maisons de Poudlard, les Gryffondor sont les courageux, les hardis et les plus forts, Poufsouffle et la Maison de la Justice et de la loyauté, de la patience et du travail, Serdaigle et la maison des érudits et de la connaissance et Serpentard celle de la roublardise.</p>
+          <p>C'est le Choixpeau lui-même qui va donner la règle de répartition des différentes maisons de Poudlard, les Gryffondor sont les courageux, les hardis et les plus forts, Poufsouffle et la Maison de la Justice et de la loyauté, de la patience et du travail, Serdaigle et la maison des érudits et de la connaissance et Serpentard celle de la roublardise.</p>
           <p>On pourra remarquer que cette distribution correspond à peu près à certaines catégories de la <strong>société</strong> : les Poufsouffles sont les artisans qui travaillent minutieusement et avec patience, les Serpentards sont les commerçants qui savent toujours tirer parti des choses (et souvent pour eux-mêmes), les Serdaigle sont les intellectuels qui sont pleins de sagesse et les Gryffondor représente les hommes d'action qui sont capables de prendre des risques quand la situation l'exige.</p>
           </>
         ),
@@ -225,7 +224,7 @@ export default {
         niveau: "verte",
         contenu: (
           <>
-          <p>ici on trouve un passage très intéressant : Harry connaît un accès de panique en imaginant que personne ne voudrait de lui… c'est-à-dire qu'il imagine quelque chose qui ne s'est tout simplement jamais produit (le Choixpeau choisit toujours une maison).. c'est tout de même très exagéré ! Il n'y a donc aucune chance pour que cela lui arrive, mais cette pensée le perturbe profondément. C'est <Cle>le premier passage de son aventure dans lequel on voit qu'il existe véritablement une faille en lui, c'est une forme de manque de confiance en soi et de peur panique d'être une fois de plus abandonné</Cle>. On pourra dire bien sûr que cet élément fait partie du portrait <strong>psychologique du personnage</strong>…</p>
+          <p>Ici on trouve un passage très intéressant : Harry connaît un accès de panique en imaginant que personne ne voudrait de lui… c'est-à-dire qu'il imagine quelque chose qui ne s'est tout simplement jamais produit (le Choixpeau choisit toujours une maison).. c'est tout de même très exagéré ! Il n'y a donc aucune chance pour que cela lui arrive, mais cette pensée le perturbe profondément. C'est <Cle>le premier passage de son aventure dans lequel on voit qu'il existe véritablement une faille en lui, c'est une forme de manque de confiance en soi et de peur panique d'être une fois de plus abandonné</Cle>. On pourra dire bien sûr que cet élément fait partie du portrait <strong>psychologique du personnage</strong>…</p>
           </>
         ),
       },
@@ -264,7 +263,7 @@ export default {
         niveau: "verte",
         contenu: (
           <>
-          <p>à chaque problème sa solution, Harry a peur d'être abandonné mais il pourra toujours compter sur le soutien de sa maison Gryffondor et de ses amis (ce qui est plus ou moins la même chose, et c'est peut-être cette solidarité fraternelle qui fait le prestige de la maison Gryffondor !).</p>
+          <p>À chaque problème sa solution, Harry a peur d'être abandonné mais il pourra toujours compter sur le soutien de sa maison Gryffondor et de ses amis (ce qui est plus ou moins la même chose, et c'est peut-être cette solidarité fraternelle qui fait le prestige de la maison Gryffondor !).</p>
           </>
         ),
       },
@@ -279,7 +278,7 @@ export default {
         niveau: "verte",
         contenu: (
           <>
-          <p>toucher un fantôme donne l'impression de plonger sa main dans un seau d'eau glacée.</p>
+          <p>Toucher un fantôme donne l'impression de plonger sa main dans un seau d'eau glacée.</p>
           </>
         ),
       },
@@ -294,7 +293,7 @@ export default {
         niveau: "verte",
         contenu: (
           <>
-          <p>présentation de Nick-quasi-sans-tête, fantôme-résident à la tour des Gryffondor.</p>
+          <p>Présentation de Nick-quasi-sans-tête, fantôme-résident à la tour des Gryffondor.</p>
           </>
         ),
       },
@@ -309,7 +308,7 @@ export default {
         niveau: "verte",
         contenu: (
           <>
-          <p>informations d'importance, les Serpentards ont remporté la Coupe des Quatre Maisons six fois de suite (!).</p>
+          <p>Informations d'importance, les Serpentards ont remporté la Coupe des Quatre Maisons six fois de suite (!).</p>
           </>
         ),
       },
@@ -339,7 +338,7 @@ export default {
         niveau: "verte",
         contenu: (
           <>
-          <p>interdiction d'aller dans la forêt et interdiction formule de se rendre dans le couloir de l'aile droite du troisième étage. Harry remarque que pour une fois on évite de donner la raison de cette interdiction. De notre côté, l’auteur installe aussi des repères aux limites du territoire des enfants ! Du côté extérieur, et du côté intérieur…</p>
+          <p>Interdiction d'aller dans la forêt et interdiction formule de se rendre dans le couloir de l'aile droite du troisième étage. Harry remarque que pour une fois on évite de donner la raison de cette interdiction. De notre côté, l’auteur installe aussi des repères aux limites du territoire des enfants ! Du côté extérieur, et du côté intérieur…</p>
           </>
         ),
       },
@@ -379,7 +378,7 @@ export default {
         niveau: "verte",
         contenu: (
           <>
-          <p>il faut faire attention à Peeves, dit Percy en poursuivant son chemin. Nous voilà prévenus !</p>
+          <p>Il faut faire attention à Peeves, dit Percy en poursuivant son chemin. Nous voilà prévenus !</p>
           </>
         ),
       },
@@ -394,7 +393,7 @@ export default {
         niveau: "verte",
         contenu: (
           <>
-          <p>les dortoirs sont gardés par un tableau magique qui demande un mot de passe ( <em>caput draconis</em> signifie en latin <em>tête de dragon</em>). Avant chaque dortoir se trouve la salle commune des élèves, un petit peu comme la Grande Salle mais pour chaque maison… c'est-à-dire une dimension en dessous…</p>
+          <p>Les dortoirs sont gardés par un tableau magique qui demande un mot de passe ( <em>caput draconis</em> signifie en latin <em>tête de dragon</em>). Avant chaque dortoir se trouve la salle commune des élèves, un petit peu comme la Grande Salle mais pour chaque maison… c'est-à-dire une dimension en dessous…</p>
           </>
         ),
       },
@@ -403,7 +402,7 @@ export default {
         niveau: "noire",
         contenu: (
           <>
-          <p>je cherche la définition de <em>fractale</em> et l'ajoute à mes mots de vocabulaire…JK Rowling construit Poudlard en forme de fractale, cela permet au lecteur de <Cle>toujours savoir exactement où est-ce que les personnages sont placés dans l'établissement</Cle>, puisque tout est construit de façon <strong>logique.</strong> Il n'y a qu'en littérature que l'on peut retrouver ce genre de procédé !</p>
+          <p>Je cherche la définition de <em>fractale</em> et l'ajoute à mes mots de vocabulaire…JK Rowling construit Poudlard en forme de fractale, cela permet au lecteur de <Cle>toujours savoir exactement où est-ce que les personnages sont placés dans l'établissement</Cle>, puisque tout est construit de façon <strong>logique.</strong> Il n'y a qu'en littérature que l'on peut retrouver ce genre de procédé !</p>
           <p>Ici quatre tours pour quatre maisons, quatre tableaux-gardiens, quatre salles communes, huit dortoirs… Mais à vrai dire l’action se situe essentiellement à Gryffondor, les autres endroits existent en marge de l’histoire, les personnages principaux ne s’y rendent qu’exceptionnellement.</p>
           </>
         ),

@@ -1,9 +1,43 @@
 # Rapport de conversion — Magic Letter
 
 Document de travail, **non déployé**, destiné à la validation d'Oni.
-État : **phase 1 terminée (tome 1)**. Tomes 2 à 4 : phase 2, après validation.
+État au 2026-10-13 : **phases 1, 2 et 3 terminées** (tomes 1 à 4, page « Comment utiliser le site », finitions). Retours d'Oni du 2026-10-13 appliqués (section suivante).
 
 Rien n'a été corrigé ni reformulé en silence. Tout ce qui a été retiré, déplacé ou classé avec un doute est listé ci-dessous ; chaque point peut être inversé facilement.
+
+## Retours d'Oni du 2026-10-13 (appliqués)
+
+**Sur tout le site**
+- Nom : « Magic Harry » dans l'en-tête, sur l'accueil et dans le titre de l'onglet. Phrase d'accueil : « Lire Harry Potter, chapitre par chapitre, et progresser en français… sans (trop) se fatiguer. »
+- Le bouton « Imprimer » de la page est supprimé. Celui de chaque exercice est gardé.
+- **Majuscule en tête de chaque capsule** (pistes, exercices, introductions ; les citations ne sont pas touchées) : 78 capsules corrigées au tome 1, 23 aux tomes 2 à 4. La liste complète est dans `scripts/convert/journal-majuscules.txt`. La même règle s'appliquera aux prochains tomes (`scripts/convert/regles.py`).
+- **Introductions** : les paragraphes en italique en tête de chapitre deviennent une capsule « Introduction », toujours affichée et non filtrée. Il y en a 12 au tome 1 (chapitres 1, 2, 6, 7, 8 à 16). Comme convenu, le chapitre 5 (qui n'est pas en italique) et l'extrait d'entretien du chapitre 7 restent en piste verte. Aux tomes 2 à 4, le texte placé avant le premier chapitre est l'introduction du tome ; il s'affiche sur le sommaire du tome.
+- « Piste verte » n'est écrit en toutes lettres que sur la première piste verte de chaque page. Les suivantes n'ont plus que le point vert, sauf les deux capsules « 5 étoiles » de l'incipit.
+- **Icônes** :
+  - flamme à côté de « Piste rouge » ;
+  - drapeau de rallye à damier (SVG original, Tabler n'en ayant pas) à côté de « Piste noire » ;
+  - cône de chantier à côté de « Exercice ».
+- **Mots-clés cliquables** : chaque pastille mène à la capsule qui en parle. La recherche se fait d'abord dans les pistes vertes, et un mot en gras ou souligné y passe en premier. La capsule visée s'ouvre si elle est repliée, puis elle est mise en évidence.
+  - Tome 1 : 106 pastilles sur 108 ont une cible. Restent sans lien « méthode » et « construire une réponse en français » (chapitre 7) : aucun passage n'en parle explicitement.
+  - Tomes 2 et 3 (mots-clés du tome) : chaque notion a une cible dans au moins un chapitre.
+  - Quand l'expression complète est introuvable, le premier mot significatif est utilisé (par exemple « justification » pour « justification paroxysme »).
+- **Sommaire des tomes** : aucune mention de piste rouge ou noire dans les résumés. J'ai retiré « (piste rouge : on trouve aussi souvent… dans l'histoire) » du chapitre 1 et la phrase « Piste rouge : quand on fait un portrait croisé… » du chapitre 2.
+- **Flèches `>>>`** : toutes les flèches qui servent de marqueur sont retirées :
+  - en début de paragraphe ou de capsule ;
+  - devant une citation ;
+  - autour d'une étiquette de piste ;
+  - collées à un mot.
+
+  Seules restent celles placées au milieu d'une phrase, au sens de « donc ». 20 flèches sont retirées au tome 1, 13 aux tomes 2 à 4 et 4 dans le mode d'emploi.
+
+**Incipit**
+- Bannière en haut de page : « Attention, nous nous arrêtons tout de suite au bas de la page 7 ! »
+- La première capsule se termine par « …la série de livres *Harry Potter*. ». La phrase « L'incipit de *Harry Potter à l'école des sorciers* : » devient le titre de la citation.
+- Les deux expressions citées sont maintenant entre guillemets français, sans la flèche qui les précédait : « *Jamais quiconque n'aurait imaginé*… » et « *…d'étrange ou de mystérieux* ». La seconde est corrigée pour correspondre à la citation (le Word disait « ….d'étrange et le mystérieux »).
+- Les 5 étoiles des deux capsules « 5 étoiles » sont à côté du libellé « Piste verte », écrit en entier.
+- Les notions de la seconde capsule « 5 étoiles » sont en capitales, chacune d'une couleur, avec un contraste AA dans les deux thèmes : LIEU, TEMPS, PERSONNAGES, DESTIN, OBJETS, ÉVÉNEMENTS, QUÊTE DU HÉROS, SCHÉMA NARRATIF, PÉRIPÉTIES, SURPRENANT POUR LE LECTEUR, EXPÉRIENCES DE LECTURE, NIVEAU. Les capitales sont appliquées par style, donc le texte source reste inchangé.
+
+---
 
 ## Méthode
 
@@ -58,6 +92,8 @@ Règles appliquées partout :
 | chapitre-16 | 8 | 5 | 8 | 0 | 0 | 0 |
 | chapitre-17 | 10 | 5 | 9 | 2 | 3 | 1 |
 | **Total** | **188** | **60** | **200** | **42** | **42** | **28** |
+
+Depuis les retours du 2026-10-13, 11 de ces 200 pistes vertes sont devenues des introductions : il y a maintenant 12 capsules « Introduction » et 189 pistes vertes.
 
 **Rapprochement avec les repères des Word** : 171 repères de page détectés dans les Word, contre 188 arrêts sur le site. Les 17 arrêts en plus sont :
 - les 14 introductions de chapitre (texte placé avant le premier repère, arrêt sans page) ;
@@ -267,7 +303,124 @@ Aucune de ces images n'est un visuel officiel de la franchise. Elles ne sont pas
 
 ---
 
+## Tomes 2 à 4 (phase 2)
+
+### Fichiers lus
+- Tome 2 : `Harry Potter et la chambre des secrets.docx`
+- Tome 3 : `Harry Potter et le prisonnier d’Azkaban.docx`
+- Tome 4 : `Harry Potter et la Coupe de Feu.docx`
+
+### Découpage
+- **Tome 2** : un chapitre par repère « (Fin) Chapitre N » ou « Chapitre N », soit les chapitres 1 à 17 (le chapitre 18 est absent, point D3). Les repères de page placés à l'intérieur d'un chapitre (pages 154, 210 à 236, 243 à 258, 320 à 347) sont des arrêts de ce chapitre. Le Word ne donne pas de titre de chapitre : le site affiche « Chapitre N ».
+- **Tome 3** : un chapitre par repère « (Fin du) Chapitre N : titre ». Les titres viennent du dossier. 16 chapitres : 3 à 14, 16, 17, 19 et 22. Les chapitres 1, 2, 15, 18, 20 et 21 sont absents (D3).
+- **Tome 4 (D2)** : le Word ne contient que des repères de page. Les 22 arrêts (pages 22 à 755) sont regroupés dans un chapitre provisoire unique, « Commentaires page par page (p. 22 à 755) ». La correspondance page → chapitre est isolée dans `src/data/tomes/tome4/tome4.chapitres.js` : il suffit d'y remplir `SOMMAIRE` (numéro, titre facultatif, page de début de chaque chapitre dans l'édition poche) pour obtenir automatiquement une page par chapitre.
+- **Introductions de tome** : le texte placé avant le premier chapitre s'affiche en tête du sommaire du tome. Au tome 3, il comprend aussi l'exercice n°1 et sa piste verte d'aide.
+- **Mots-clés** : au niveau du tome pour les tomes 2 (« Notions étudiées ») et 3 (« Notions »), affichés sur chaque page de chapitre. Pas de mots-clés au tome 4 (D5).
+
+### Comptages (site construit)
+
+| Tome | Chapitres | Arrêts | Introductions | Citations | Pistes vertes | Pistes rouges | Pistes noires | Exercices |
+|---|---|---|---|---|---|---|---|---|
+| 2 | 17 | 38 | 1 | 7 | 45 | 6 | 8 | 0 |
+| 3 | 16 | 16 | 1 | 13 | 27 | 7 | 4 | 5 |
+| 4 | 1 (provisoire) | 22 | 1 | 11 | 24 | 3 | 7 | 0 |
+
+### Contrôles
+- **Citations** : 31 sur 31 identiques au Word, caractère pour caractère (hors espaces et casse).
+- **Couverture** : tous les paragraphes des Word sont retrouvés sur le site, sauf des écarts voulus :
+  - les titres, sous-titres et notions des tomes, affichés dans l'en-tête ;
+  - les repères « (Fin du) Chapitre N : titre », devenus titres d'arrêt et de chapitre ;
+  - la ponctuation de liaison des repères (« Page 215, … », « Page 22. », « p83 - ») ;
+  - les étiquettes de piste restées au milieu d'une phrase ;
+  - le repère vide « Chapitre 13 : » du tome 2, qui précède directement « Page 243 ».
+
+### Points à valider par Oni
+1. **Étiquettes non standard** :
+   - tome 2 : « Piste rouge/ noire » → noire ; « Piste (très) noire » et « (>>>Piste très noire>>> … » → noire ;
+   - tome 3 : « Piste Bleue » → **rouge**. Le texte qui la précède dit « je vous encourage vraiment à vous engager sur la prochaine piste bleue ! Bien-sûr ce n'est pas obligatoire ». Cette phrase reste telle quelle, alors que la capsule s'affiche en rouge ;
+   - tome 4 : « Hors-piste » → noire.
+2. **Étiquettes au milieu d'un paragraphe**, laissées dans le texte : tome 3, chapitre 19 (« (》》》Piste noire》》》 : c'est une sorte d'introspection… »).
+3. **Dialogues** : les dialogues cités sur plusieurs paragraphes deviennent un seul bloc citation. Six sont regroupés automatiquement (tome 3 : chapitres 13, 14, 16, 17, 22 ; tome 4 : p. 136). Six sont recollés à la main (tome 2 : p. 327 ; tome 3 : p. 157, 253, 379 ; tome 4 : p. 599, 632).
+4. **Pages des citations** : quand la citation est placée sous un repère de chapitre (tome 3), le Word ne donne pas toujours la page. La ligne de source s'affiche alors sans « p. ». J'ai repris la page quand le commentaire la donne : 157, 253, 334, 349, 360, 379, 389.
+5. **Exercices numérotés (tome 3)** : « EXERCICE n°2 : rédaction : … » donne le titre « n°2 : rédaction » ; le reste forme le contenu.
+6. **Tome 4, page 136** : le commentaire qui suit le dialogue est classé en piste verte, alors que le repère annonçait une piste rouge. Doit-il rester en rouge ?
+7. **Tome 2** : aucune capsule exercice, car le Word n'en contient pas.
+
+### Fautes suspectées (non corrigées, relevé non exhaustif)
+
+Deux citations semblent **dictées** : « point » y est écrit à la place du « . », et certains mots paraissent erronés. Il s'agit du tome 2, p. 332 (« le Phoenix plonge à soudain point… ») et du tome 4, p. 308 (« tu le sais bien point d'accord »). Elles sont reproduites telles quelles et sont à reprendre dans le livre.
+
+| Tome | Extrait (Word) | Remarque |
+|---|---|---|
+| 2 | `justification paroxysme` | virgule manquante dans les notions (deux notions ?) |
+| 2 | `Lucius Malefoy à des informations` | a |
+| 2 | `Nous assistant ensuite` | assistons |
+| 2 | `Hary a eu` | Harry |
+| 2 | `détail à une immense importance` | a |
+| 2 | `dans les dialogue` | dialogues |
+| 2 | `exclusion l'école` | exclusion de l'école |
+| 2 | `la terreur que répond la magie noire` | répand |
+| 2 | `le Phoenix plonge à soudain point` | citation dictée : « point » pour « . », mots erronés — à reprendre dans le livre |
+| 2 | `un anagramme` | une anagramme |
+| 3 | `Il il y a` | mot doublé |
+| 3 | `et elle touchent` | elles |
+| 3 | `ressemble étrangement à Neuville` | Neville |
+| 3 | `demande à Hermione d'une voix inquiète` | citation : « demanda Hermione » ? (vérifier dans le livre) |
+| 3 | `qu'elle n'arrive plus à se contrôler` | qu'il (Harry) |
+| 3 | `en créant un personnage en porte` | qui porte ? |
+| 3 | `Pettigrow à des faiblesses` | a |
+| 3 | `Askaban` | Azkaban |
+| 3 | `les avais tué` | citation : tués ? (vérifier dans le livre) |
+| 3 | `s'était levé d'un bon` | bond (citation : vérifier dans le livre) |
+| 3 | `une tâche rouge` | tache (citation : vérifier dans le livre) |
+| 4 | `tu le sais bien point d'accord` | citation dictée : « point » pour « . » — à reprendre dans le livre |
+| 4 | `dis Hermione en se frottant` | dit (citation : vérifier dans le livre) |
+| 4 | `Ce dialogue entre Paris, Ron et Hermione` | Harry |
+| 4 | `ce qui ĺ’attend` | caractère parasite |
+| 4 | `est d'autant plus surprenante` | « L'apparition sonore… » (article manquant en début de phrase) |
+| 4 | `et donc très importante` | est |
+| 4 | `et la première réelle apparition` | est |
+| 4 | `ce que vous n'êtes plus tout à fait piste verte` | « c'est que » ? |
+
+### Emoji supprimé
+- Tome 2, chapitre 17 : 😀 (« …il est au fond du trou.😀 »).
+
+### Images
+Aucune image dans les Word des tomes 2 à 4.
+
+---
+
+## Page « Comment utiliser le site » (phase 3)
+
+- Contenu : `1 - Introduction_` et `2 - Instructions -` (tome 1), repris à l'identique dans `src/data/commentUtiliser.jsx`. Seuls changent les flèches (règle commune) et l'étendue de trois soulignés coupés au milieu d'un mot dans le Word (« c<u>e n'est pas</u> », « l<u>es explications</u> », « j'<u>ai donc</u> »), où la lettre isolée est rattachée au surlignage.
+- Numéros des parties : ce sont ceux qu'affiche la numérotation automatique du Word, soit « a) Les objectifs », puis « 2) » et « 3) » tapés à la main ; ensuite « 1) Prendre des notes », « 2) Fonctionnement du dossier », « A. / B. / C. » et « 1) à 4) ». **À valider** : « a) Les objectifs » est probablement un « 1) » dans l'esprit d'Oni.
+- La légende (capsules et boutons) est un texte d'interface que j'ai rédigé, en vouvoiement comme le dossier.
+- Fautes suspectées dans ces deux fichiers : « La première raison et que » (est) ; « MODE D EMPLOI » (apostrophe) ; « à propos desquels vous avez des doutes » (desquelles) ; « une immense auteur » ; « de bon réflexes » ; « distrayante.. » ; « qui est première page du livre ».
+- Images non importées : phare, citrouilles d'Halloween, chat sorcier (voir le tableau du tome 1).
+
+## Finitions (phase 3)
+
+- **Impression** :
+  - le bouton « Imprimer » d'un exercice n'imprime que cet exercice, sur une page, avec ses lignes ;
+  - l'impression du navigateur imprime tout le chapitre, pistes repliées comprises, sans l'en-tête, le filtre, le sommaire ni la navigation.
+- **Accessibilité** :
+  - cibles tactiles d'au moins 44 px, y compris les pastilles de mots-clés ;
+  - focus visible, et lien « Aller au contenu » ;
+  - le tiroir du sommaire se ferme avec Échap et rend le focus au bouton « Sommaire » ;
+  - `aria-expanded` sur les pistes repliables ;
+  - `prefers-reduced-motion` respecté ;
+  - contrastes AA vérifiés dans les deux thèmes, y compris pour les couleurs des notions.
+- **Recette** (Playwright) :
+  - 59 pages : accueil, mode d'emploi, 404, 4 sommaires et 52 chapitres ;
+  - 4 formats : tablette portrait clair, tablette paysage sombre, téléphone sombre avec dyslexie, grand écran clair avec dyslexie ;
+  - aucun défilement horizontal, aucune erreur de console, thème et police dyslexie appliqués partout ;
+  - seuls les deux liens dans le texte (larousse.fr, vikidia.fr) font moins de 44 px, ce que la règle WCAG accepte pour un lien au milieu d'une phrase.
+- **Non-référencement** : balise `noindex, nofollow, noarchive` dans le HTML, `robots.txt` (`Disallow: /`), en-tête `X-Robots-Tag` dans `netlify.toml`. Aucune balise Open Graph, aucun sitemap.
+
+---
+
 ## Informations manquantes (placeholders)
 
 - **D1** : éditeur et année de l'édition poche → `src/data/config.js` (`À FOURNIR`). La ligne de source suit pour l'instant le format du cahier : « J. K. Rowling, <titre>, édition poche, p. N. ».
-- **D2** : sommaire du tome 4 (phase 2).
+- **D2** : sommaire de l'édition poche du tome 4 → `src/data/tomes/tome4/tome4.chapitres.js` (`SOMMAIRE`, vide pour l'instant).
+- Titres des chapitres du tome 2 : absents du Word ; le site affiche « Chapitre N ». À fournir si Oni le souhaite.

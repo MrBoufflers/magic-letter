@@ -11,8 +11,7 @@ export default {
   {
     blocs: [
       {
-        type: 'piste',
-        niveau: "verte",
+        type: 'introduction',
         contenu: (
           <>
           <p><em>Avez-vous remarqué que jusqu'ici (et nous arrivons tout de même à la page 213) nous <Cle>n'avons quasiment jamais entendu parler de ce que pense Harry et de quels sont ses sentiments</Cle> ? Il y a bien-sûr quelques informations ici et là, mais jamais le narrateur n'a pris le temps de nous dire, par exemple, ce que Harry pensait <Cle>au fond</Cle> de Ron ou de Hermione, de son rapport à la magie, à son futur ou de ses rapports avec les filles… en fait, nous ne savons toujours pas grand-chose de ce personnage principal qui reste bien mystérieux ! Évidemment, l'autrice l'a fait exprès <Cle>car elle sait très bien qu'il lui reste 3000 pages à écrire</Cle>… la découverte du personnage commence donc plus ou moins maintenant… et de quelle manière ! Voyons un peu…</em></p>
@@ -97,7 +96,7 @@ export default {
         niveau: "noire",
         contenu: (
           <>
-          <p>puisque nous parlons des échecs, je précise qu'il est assez utile dans les histoires d'affrontement de faire des <strong>analogies</strong> c'est-à-dire une espèce de comparaison) avec les pièces de ce jeu pour <Cle>évaluer la</Cle> <strong><Cle>situation</Cle></strong><Cle>.</Cle></p>
+          <p>Puisque nous parlons des échecs, je précise qu'il est assez utile dans les histoires d'affrontement de faire des <strong>analogies</strong> c'est-à-dire une espèce de comparaison) avec les pièces de ce jeu pour <Cle>évaluer la</Cle> <strong><Cle>situation</Cle></strong><Cle>.</Cle></p>
           <p><Cle>Les dames</Cle> : Dumbledore, Potter, Voldemort</p>
           <p>Ce sont des personnages auxquels rien ne résiste, qui gagnent presque toujours leur combat, qui peuvent se déplacer facilement sur tous les types de terrain ( cette caractéristique concerne surtout Voldemort dans cette histoire mais beaucoup moins Harry et Dumbledore !)… Dans les films Star Wars par exemple c'est aussi ce qui distingue Dark Vador dont le vaisseau spatial se déplace à la vitesse de la lumière dans tous les coins de l'univers !).</p>
           <p>Les tours ( Hagrid, le cerbère, les trolls.....) : sont des personnages très solides qui jouent de leur force physique et foncent droit dans le tas.</p>
@@ -148,7 +147,7 @@ export default {
         niveau: "verte",
         contenu: (
           <>
-          <p>nouvelle surprise préparée par le <strong>narrateur</strong> : l'héritage de Harry ne se résume pas au coffre de la banque Gringotts, comme on pouvait le croire, il y a aussi cette cape d'invisibilité remise le jour de Noël par un visiteur anonyme ! (anonyme : qui n’a pas de nom)</p>
+          <p>Nouvelle surprise préparée par le <strong>narrateur</strong> : l'héritage de Harry ne se résume pas au coffre de la banque Gringotts, comme on pouvait le croire, il y a aussi cette cape d'invisibilité remise le jour de Noël par un visiteur anonyme ! (anonyme : qui n’a pas de nom)</p>
           </>
         ),
       },
@@ -166,7 +165,7 @@ export default {
         niveau: "noire",
         contenu: (
           <>
-          <p>on a déjà vu ce <strong>procédé littéraire</strong> en action à d'autres moments du texte, comme par exemple à la page 9 pour parler des interrogations de Vernon Dursley qui ne comprend pas les phénomènes magiques qu'il aperçoit dans le premier chapitre. « Qu'est-ce qui avait bien pu lui passer par la tête ? Il avait dû se laisser abuser par un reflet du soleil sur le trottoir. »</p>
+          <p>On a déjà vu ce <strong>procédé littéraire</strong> en action à d'autres moments du texte, comme par exemple à la page 9 pour parler des interrogations de Vernon Dursley qui ne comprend pas les phénomènes magiques qu'il aperçoit dans le premier chapitre. « Qu'est-ce qui avait bien pu lui passer par la tête ? Il avait dû se laisser abuser par un reflet du soleil sur le trottoir. »</p>
           <p>Mais ici la <strong>figure de style</strong> « <strong>question rhétorique</strong> » vient frapper sur un point très important de l'histoire, et c'est à ce moment-là que les figures de style rayonnent le plus ! C'est la raison pour laquelle, pour repérer ce type de phénomène, <Cle>il faut A LA FOIS être attentif à l'aspect narratif ET aux procédés d'écriture pendant votre lecture….</Cle> C'est une habitude qui est assez longue à prendre, mais vous progresserez plus vite si vous savez ce que vous cherchez.</p>
           </>
         ),
@@ -224,7 +223,7 @@ export default {
         type: 'exercice',
         contenu: (
           <>
-          <p>comment le réalisateur a-t-il transcrit cette scène au cinéma ? Si vous avez la possibilité de voir cette scène, n'hésitez pas à faire la comparaison ! Je vais essayer de trouver la vidéo du film pour compléter ce dossier…</p>
+          <p>Comment le réalisateur a-t-il transcrit cette scène au cinéma ? Si vous avez la possibilité de voir cette scène, n'hésitez pas à faire la comparaison ! Je vais essayer de trouver la vidéo du film pour compléter ce dossier…</p>
           </>
         ),
       },
@@ -233,7 +232,7 @@ export default {
         niveau: "noire",
         contenu: (
           <>
-          <p>nous allons nous permettre, exceptionnellement, un commentaire d'un niveau plus élevé pour évoquer cette phrase venue d’un autre monde… ce n'est pas grave si vous ne comprenez pas, mais il serait dommage de ne pas utiliser cette occasion pour planter quelques petites graines pour la suite de votre parcours de lecteur ! Vous pouvez toujours essayer de demander à vos parents de vous expliquer ce point ou relire cette explication plusieurs fois pour voir si ça vous paraît plus clair…</p>
+          <p>Nous allons nous permettre, exceptionnellement, un commentaire d'un niveau plus élevé pour évoquer cette phrase venue d’un autre monde… ce n'est pas grave si vous ne comprenez pas, mais il serait dommage de ne pas utiliser cette occasion pour planter quelques petites graines pour la suite de votre parcours de lecteur ! Vous pouvez toujours essayer de demander à vos parents de vous expliquer ce point ou relire cette explication plusieurs fois pour voir si ça vous paraît plus clair…</p>
           <p>On pourrait dire que d'une certaine façon J.K. Rowling touche ici aux <Cle>limites de la littérature</Cle>, et plus précisément on pourrait utiliser un terme de <strong>philosophie</strong> en disant qu'elle touche à <strong>l'ontologie</strong> de la littérature, <Cle>c'est-à-dire que c'est avec ce genre de phrase que l'on définit ce que la littérature est.</Cle> En effet, cette phrase ne pourrait être transcrite ni en cinéma, ni en peinture, ni en architecture… elle est donc caractéristique de ce que peut faire la littérature ! Et la scène est d'autant plus bouleversante que <em>comme par hasard</em> elle prend lieu à l'intérieur des murs d'une bibliothèque.</p>
           <p>Dans ce cas précis, <Cle>elle permet au lecteur, par son imagination, de faire une expérience magique</Cle>, c'est-à-dire de se mettre à la place du magicien qui a fait disparaître ton corps mais qui sent néanmoins le poids des choses…De pouvoir ressentir une expérience magique dans un livre qui parle de magie, on peut dire que c'est assez fort ! Cette incroyable expérience de lecture offerte par l'auteur aux enfants est certainement l'une des clés du succès de la saga.</p>
           </>
@@ -274,7 +273,7 @@ export default {
         niveau: "verte",
         contenu: (
           <>
-          <p>passage de Rogue et Rusard qui semblent chercher quelque chose. Cela signifie pour notre héros un certain danger ( il ne faut pas qu'il se fasse attraper) mais cela rappelle aussi au lecteur que l'on ne sait toujours pas très bien qui est-ce qui manœuvre dans l'ombre pour commettre un crime dans Poudlard ! Rogue et Rusard sont-ils associés pour préparer un mauvais coup ?</p>
+          <p>Passage de Rogue et Rusard qui semblent chercher quelque chose. Cela signifie pour notre héros un certain danger ( il ne faut pas qu'il se fasse attraper) mais cela rappelle aussi au lecteur que l'on ne sait toujours pas très bien qui est-ce qui manœuvre dans l'ombre pour commettre un crime dans Poudlard ! Rogue et Rusard sont-ils associés pour préparer un mauvais coup ?</p>
           </>
         ),
       },
@@ -289,7 +288,7 @@ export default {
         niveau: "verte",
         contenu: (
           <>
-          <p>découverte dans une arrière salle du miroir et de sa curieuse inscription. Encore un <Cle>lieu secret</Cle> qui réserve des surprises !</p>
+          <p>Découverte dans une arrière salle du miroir et de sa curieuse inscription. Encore un <Cle>lieu secret</Cle> qui réserve des surprises !</p>
           </>
         ),
       },
@@ -304,7 +303,7 @@ export default {
         niveau: "verte",
         contenu: (
           <>
-          <p>moment d'épouvante de Harry (partagée par le lecteur) à l'apparition du reflet. « pour la première fois de sa vie, il avait sa famille devant les yeux. »</p>
+          <p>Moment d'épouvante de Harry (partagée par le lecteur) à l'apparition du reflet. « pour la première fois de sa vie, il avait sa famille devant les yeux. »</p>
           <p><Cle>Ici, l'auteur se sert de la magie pour évoquer les émotions de Harry</Cle> et cela produira un certain effet ! Nous verrons dans les ouvrages ultérieurs (= qui viennent après) que l’on trouve beaucoup d’autres moments de ce genre dans lesquels l’auteur exploite très bien les ingrédients du genre littéraire merveilleux qu’elle a à sa disposition… Cela permet par exemple de voir à l’intérieur des personnages des émotions qui prennent forme !</p>
           </>
         ),
@@ -369,7 +368,7 @@ export default {
         niveau: "verte",
         contenu: (
           <>
-          <p>scène très intéressante durant laquelle Ron et Harry sont sur le point de se disputer parce que <Cle>l'objet magique excite l'égoïsme de chacun d’entre eux.</Cle> Ron dit la phrase « arrête de me pousser », on est même sur le point de penser qu'ils vont bientôt en venir aux mains…</p>
+          <p>Scène très intéressante durant laquelle Ron et Harry sont sur le point de se disputer parce que <Cle>l'objet magique excite l'égoïsme de chacun d’entre eux.</Cle> Ron dit la phrase « arrête de me pousser », on est même sur le point de penser qu'ils vont bientôt en venir aux mains…</p>
           </>
         ),
       },
@@ -384,7 +383,7 @@ export default {
         niveau: "verte",
         contenu: (
           <>
-          <p>petite <strong>péripétie</strong> supplémentaire mais les yeux de miss Teigne ne traversent pas la cape d'invisibilité. J’espère que vous aviez repéré cette autre caractéristique de la cape d’invisibilité !</p>
+          <p>Petite <strong>péripétie</strong> supplémentaire mais les yeux de miss Teigne ne traversent pas la cape d'invisibilité. J’espère que vous aviez repéré cette autre caractéristique de la cape d’invisibilité !</p>
           </>
         ),
       },
@@ -399,7 +398,7 @@ export default {
         niveau: "verte",
         contenu: (
           <>
-          <p>apparition incroyable de Dumbledore dans cette histoire (on l’avait presque oublié…), tandis que le lecteur ne pensait qu'à Rusard et à Rogue que Ron avait mentionnés en disant qu'il fallait se méfier ! Le narrateur a créé une <strong>fausse piste</strong> une fois de plus nous tombons le nez dedans. On pourrait dire que cette <strong>entrée en scène</strong> est tout à fait digne du personnage de Dumbledore.</p>
+          <p>Apparition incroyable de Dumbledore dans cette histoire (on l’avait presque oublié…), tandis que le lecteur ne pensait qu'à Rusard et à Rogue que Ron avait mentionnés en disant qu'il fallait se méfier ! Le narrateur a créé une <strong>fausse piste</strong> une fois de plus nous tombons le nez dedans. On pourrait dire que cette <strong>entrée en scène</strong> est tout à fait digne du personnage de Dumbledore.</p>
           </>
         ),
       },

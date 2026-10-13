@@ -10,14 +10,14 @@ const { chromium } = require(execSync('npm root -g').toString().trim() + '/playw
   const p = await b.newPage();
   const out = {};
   for (const c of chapitres) {
-    await p.goto(`http://localhost:4173/tome/${tome}/${c}`);
-    await p.waitForSelector('.chapitre');
+    await p.goto(c === '_tome' ? `http://localhost:4173/tome/${tome}` : `http://localhost:4173/tome/${tome}/${c}`);
+    await p.waitForSelector(c === '_tome' ? '.page' : '.chapitre');
     // tout déplier pour que le texte des pistes repliées soit présent
-    await p.evaluate(() => document.querySelectorAll('.piste-corps[hidden]').forEach((e) => e.removeAttribute('hidden')));
+    await p.evaluate(() => document.querySelectorAll('.piste-corps.ferme').forEach((e) => e.classList.remove('ferme')));
     out[c] = await p.evaluate(() => ({
       texte: (() => {
         // texte du contenu seul : on retire les éléments d'interface
-        const clone = document.querySelector('.chapitre').cloneNode(true);
+        const clone = (document.querySelector('.chapitre') || document.querySelector('.tome-intro') || document.createElement('div')).cloneNode(true);
         clone.querySelectorAll('.piste-label, .piste-hint, .exercice-label, .exercice-entete button, .citation-source, .marque-page, .guillemet, .definition-label, .pastille-page, .chapitre-outils, .chapitre-nav, .chapitre-tete, .sr-only').forEach((e) => e.remove());
         document.body.appendChild(clone);
         const t = clone.innerText;
@@ -26,6 +26,7 @@ const { chromium } = require(execSync('npm root -g').toString().trim() + '/playw
       })(),
       citations: [...document.querySelectorAll('.citation-corps')].map((e) => e.innerText),
       arrets: document.querySelectorAll('.arret').length,
+      introductions: document.querySelectorAll('.introduction').length,
       verte: document.querySelectorAll('.piste-verte').length,
       rouge: document.querySelectorAll('.piste-rouge').length,
       noire: document.querySelectorAll('.piste-noire').length,

@@ -11,8 +11,7 @@ export default {
   {
     blocs: [
       {
-        type: 'piste',
-        niveau: "verte",
+        type: 'introduction',
         contenu: (
           <>
           <p><em>Dans ce chapitre je vais me contenter de donner quelques explications sur d’autres ingrédients que l’auteur met en place alors que le récit n’est pas vraiment commencé (c’est toujours la</em> <strong><em>situation initiale,</em></strong> <em>si l’on considère l’ensemble de l'histoire, c'est-à-dire les sept livres de Harry Potter) ! Bien-sûr, on pourra dire qu’à ce stade son but est de réussir son année scolaire à Poudlard, mais le lecteur se doute bien que Harry va bientôt affronter des périls (= dangers) plus grands. En réalité, <Cle>l’auteur prépare la mise en place de nouveaux</Cle></em> <strong><em><Cle>enjeux</Cle> :</em></strong> <em>l’évolution psychologique des personnages (comment ils grandissent et comment ils apprennent à affronter leurs peurs) et l’affrontement entre le camp de Harry et celui de Voldemort.</em></p>
@@ -106,7 +105,7 @@ export default {
         niveau: "noire",
         contenu: (
           <>
-          <p><Cle>le portrait psychologique de Ron. p 107 :</Cle> : « son visage s'était soudain assombri.</p>
+          <p><Cle>Le portrait psychologique de Ron. p 107 :</Cle> : « son visage s'était soudain assombri.</p>
           <p>- Je suis le 6e à aller à Poudlard, dans la famille. J'ai intérêt à être à la hauteur... »</p>
           <p>Cette phrase fondamentale pour comprendre le personnage de Ron, c'est pour lui très important de faire face à la concurrence de ses cinq frères (!), à la fois parce qu'ils sont nombreux et qu<Cle>'il faut savoir se faire sa place dans les grandes familles</Cle> mais aussi parce que, chez les Weasley, la sorcellerie est une tradition fondamentale…ne pas réussir en sorcellerie, pour Ron, ce serait donc lourdement décevoir sa famille ! .. or, rappelons-nous que Ron est le petit chéri à sa maman, nous pouvons donc imaginer que <Cle>cela serait particulièrement douloureux pour lui</Cle>. Voici un autre exemple <strong>sous-entendu</strong> du texte qui fait du livre Harry Potter un modèle d'écriture en ce qui concerne <strong>l'implicite du texte (ça veut dire : ce que le texte suggère sans le dire vraiment, sans le dire « explicitement »).</strong></p>
           <p>Ron donne d'ailleurs une explication un petit peu plus bas :« <em>et moi, on voudrait que je fasse aussi bien que les autres, mais même si j'y arrive, personne ne s'en apercevra, parce que je serai le sixième à le faire et on trouvera ça normal</em>. »</p>
@@ -184,7 +183,7 @@ export default {
         contenu: (
           <>
           <Definition terme="Psychologie">
-            <p>ensemble des éléments du texte qui expliquent le comportement et les sentiments d’un personnage.</p>
+            <p>Ensemble des éléments du texte qui expliquent le comportement et les sentiments d’un personnage.</p>
           </Definition>
           </>
         ),
@@ -230,7 +229,7 @@ export default {
         niveau: "verte",
         contenu: (
           <>
-          <p>allusion à la chute de Voldemort et au retour du père de Malfoy dans le camp des gentils… C’est Ron qui apporte à Harry les quelques informations dont il dispose, il n’est qu’un enfant et ses connaissances en politique sont encore bien imparfaites !</p>
+          <p>Allusion à la chute de Voldemort et au retour du père de Malfoy dans le camp des gentils… C’est Ron qui apporte à Harry les quelques informations dont il dispose, il n’est qu’un enfant et ses connaissances en politique sont encore bien imparfaites !</p>
           </>
         ),
       },
@@ -240,7 +239,7 @@ export default {
         contenu: (
           <>
           <Definition terme="politique">
-            <p>art de diriger un groupe de personnes, et d’en gérer les affaires communes.</p>
+            <p>Art de diriger un groupe de personnes, et d’en gérer les affaires communes.</p>
           </Definition>
           </>
         ),

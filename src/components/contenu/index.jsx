@@ -6,6 +6,11 @@ export function Cle({ children }) {
   return <mark className="cle">{children}</mark>;
 }
 
+// Notion clé mise en avant : capitales et couleur (palette `--notion-0` à `--notion-5`).
+export function Notion({ n = 0, children }) {
+  return <strong className={`notion notion-${n % 6}`}>{children}</strong>;
+}
+
 // Lien externe, ouvert dans un nouvel onglet.
 export function Lien({ href, children }) {
   return (

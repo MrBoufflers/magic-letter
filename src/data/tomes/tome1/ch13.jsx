@@ -11,8 +11,7 @@ export default {
   {
     blocs: [
       {
-        type: 'piste',
-        niveau: "verte",
+        type: 'introduction',
         contenu: (
           <>
           <p><em>Dans ce chapitre, nouveau coup d’accélérateur ! Les élèves progressent et réussissent leurs premiers tours de magie : l’histoire des élèves va donc se transformer progressivement en histoire de sorciers. Nous allons voir que l’auteur en a bien conscience, car la narration insiste beaucoup là-dessus !</em></p>
@@ -39,7 +38,7 @@ export default {
         niveau: "verte",
         contenu: (
           <>
-          <p><Fl /> Le lecteur peut s'attendre à de nouvelles injustices.</p>
+          <p>Le lecteur peut s'attendre à de nouvelles injustices.</p>
           </>
         ),
       },
@@ -128,7 +127,7 @@ export default {
         niveau: "noire",
         contenu: (
           <>
-          <p>dans le précédent commentaire le mot « son » figure entre crochets. Ce n'est pas une erreur, c'est un <strong>code</strong> pour dire que j'ai transformé en mot de la <strong>citation</strong> pour qu'elle soit plus compréhensible : la situation authentique est« lorsque vous aurez eu le temps de réfléchir et de choisir votre camp ». Mais si je vais utiliser le mot « votre » la phrase aurait eu l'air très bizarre ! Retenez ce petit truc quand vous voudrez vous-même avoir une utilisation habile de la citation.</p>
+          <p>Dans le précédent commentaire le mot « son » figure entre crochets. Ce n'est pas une erreur, c'est un <strong>code</strong> pour dire que j'ai transformé en mot de la <strong>citation</strong> pour qu'elle soit plus compréhensible : la situation authentique est« lorsque vous aurez eu le temps de réfléchir et de choisir votre camp ». Mais si je vais utiliser le mot « votre » la phrase aurait eu l'air très bizarre ! Retenez ce petit truc quand vous voudrez vous-même avoir une utilisation habile de la citation.</p>
           </>
         ),
       },
