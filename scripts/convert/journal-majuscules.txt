@@ -1,0 +1,104 @@
+# Capsules dont la première lettre a été mise en majuscule (règle d’Oni du 2026-10-13).
+## Tome 1
+ch00-incipit.jsx : « le Champ lexical de la sorcelleri »
+ch00-incipit.jsx : « la psychologie d'un personnage es »
+ch01.jsx : « signe qui permet de reconnaître un individu d’un a »
+ch01.jsx : « peut-être aussi que Mister Dursley ne veut pas tou »
+ch01.jsx : « on pourrait penser ici que Mrs Dursley n'aime pas  »
+ch01.jsx : « enfant colérique, mal éduqué et qui fait beaucoup  »
+ch01.jsx : « relisez le passage ci-dessus en étant attentif à c »
+ch01.jsx : « cette apparition progressive de la magie dans le t »
+ch03.jsx : « évidemment, quand on repère un procédé lit »
+ch03.jsx : « comme pour le dialogue la forme du texte</ »
+ch03.jsx : « procédé par lequel l'auteur appuie sur un point pr »
+ch03.jsx : « c’est donc un procédé de mise en scène</st »
+ch04.jsx : « quand on commente un texte, il est très important  »
+ch04.jsx : « on parle aussi de procédé de mise en scène »
+ch04.jsx : « c'est à ce genre de détails que l'on reconnaît les »
+ch05.jsx : « le labyrinthe est un territoire e »
+ch05.jsx : « cela nous amène à penser, évidemment, car nous som »
+ch06.jsx : « le portrait psychologique de Ron. p 107 : :  »
+ch06.jsx : « ensemble des éléments du texte qui expliquent le c »
+ch06.jsx : « allusion à la chute de Voldemort et au retour du p »
+ch06.jsx : « art de diriger un groupe de personnes, et d’en gér »
+ch07.jsx : « le point de vue subjectif consist »
+ch07.jsx : « une vingtaine de fantômes hantent Poudlard et Peev »
+ch07.jsx : « description de la Grande Salle. »
+ch07.jsx : « p124 : »
+ch07.jsx : « c'est le Choixpeau lui-même qui va donner la règle »
+ch07.jsx : « ici on trouve un passage très intéressant : Harry  »
+ch07.jsx : « à chaque problème sa solution, Harry a peur d'être »
+ch07.jsx : « toucher un fantôme donne l'impression de plonger s »
+ch07.jsx : « présentation de Nick-quasi-sans-tête, fantôme-rési »
+ch07.jsx : « informations d'importance, les Serpentards ont rem »
+ch07.jsx : « interdiction d'aller dans la forêt et interdiction »
+ch07.jsx : « il faut faire attention à Peeves, dit Percy en pou »
+ch07.jsx : « les dortoirs sont gardés par un tableau magique qu »
+ch07.jsx : « je cherche la définition de fractale et l »
+ch08.jsx : « ici l'auteur utilise une figure de style</ »
+ch08.jsx : « dans cette scène le fait que le professeur Rogue i »
+ch08.jsx : « après la théorie, l'action… c'est un procédé souve »
+ch08.jsx : « récit dans lequel le héros part de zéro et dont on »
+ch08.jsx : « pour la seconde fois, Hagrid évite de devoir s'exp »
+ch09.jsx : « lorsque l'on doit exprimer une incertitude ou un d »
+ch09.jsx : « nouvel accident de Neville Londubat qui, enfourcha »
+ch09.jsx : « course-poursuite avec Malefoy que Harry poursuit s »
+ch09.jsx : « on pourra dire que la description »
+ch09.jsx : « quand le texte parle d'un sujet précis de façon po »
+ch09.jsx : « nous pouvons donc dire que le narrateur co »
+ch09.jsx : « nouvelle surprise réservée par l'environnement mag »
+ch09.jsx : « contre toute attente, Peeves est tellement instabl »
+ch09.jsx : « apparition du cerbère à trois têtes, « d'où pendai »
+ch09.jsx : « le chapitre se termine sur une révélation< »
+ch09.jsx : « mais ce n'est pas tout, Hermione ne s'entendait pa »
+ch10.jsx : « la troisième chose qui renforce l'idée que Malefoy »
+ch10.jsx : « rappelez-vous de la définition du suspense : c'est »
+ch11.jsx : « c'est la raison pour laquelle on utilise souvent l »
+ch11.jsx : « on remarquera que cette métaphore (« Flint semblai »
+ch11.jsx : « nous suivons le match de Quidditch par le commenta »
+ch11.jsx : « commentaire ironique de Lee Jorda »
+ch11.jsx : « petit coup de pouce du destin, il »
+ch12.jsx : « puisque nous parlons des échecs, je précise qu'il  »
+ch12.jsx : « nouvelle surprise préparée par le narrateu »
+ch12.jsx : « on a déjà vu ce procédé littéraire</strong »
+ch12.jsx : « comment le réalisateur a-t-il transcrit cette scèn »
+ch12.jsx : « nous allons nous permettre, exceptionnellement, un »
+ch12.jsx : « passage de Rogue et Rusard qui semblent chercher q »
+ch12.jsx : « découverte dans une arrière salle du miroir et de  »
+ch12.jsx : « moment d'épouvante de Harry (partagée par le lecte »
+ch12.jsx : « scène très intéressante durant laquelle Ron et Har »
+ch12.jsx : « petite péripétie supplémentaire m »
+ch12.jsx : « apparition incroyable de Dumbledore dans cette his »
+ch13.jsx : « dans le précédent commentaire le mot « son » figur »
+ch14.jsx : « comme le dit Ron, Hagrid a « perdu la boule » (c’e »
+ch15.jsx : « à partir de ce moment-là Harry commence à devoir p »
+ch15.jsx : « voici une phrase qui en dit long sur le lien très  »
+ch15.jsx : « ensemble de mots qui entretiennent un lien avec un »
+ch15.jsx : « première astuce de la narration, la pierre philoso »
+ch16.jsx : « nouveau coup de théâtre (= change »
+ch17.jsx : « ce dernier chapitre s'ouvre sur cette petite phras »
+ch17.jsx : « pour l'instant, Voldemort n'a pas de substance »
+## Tomes 2 à 4
+ch05.jsx : « ce procédé de construction est souvent ut »
+ch09.jsx : « à propos de la pétrification de Miss Teigne »
+ch10.jsx : « comme le dit la fable de La Fontaine, « appren »
+ch11.jsx : « page 201, fin du premier paragraphe. »
+ch11.jsx : « en école de cinéma pour traiter de ce genre de pro »
+ch11.jsx : « premier moment depuis son arrivée à Poudlard où Ha »
+ch11.jsx : « certains élèves de Poufsouffle commencent à penser »
+ch11.jsx : « la situation s'envenime dangereusement : Justin Fi »
+ch12.jsx : « métamorphose de Harry et de ses camarades »
+ch12.jsx : « nombreuses sont les histoires dans lesquelles le l »
+ch12.jsx : « série de quiproquo dans les dialogue avec Percy d' »
+ch12.jsx : « le mot de passe de la maison des Serpentards est « »
+ch12.jsx : « dialogue importantissime dans lequel Malefoy donne »
+ch06.jsx : « superstitieux, impressionnable, subsaharien, géoma »
+ch13.jsx : « je cherche l'étymologie du mot Patronus ( c'est-à- »
+ch01.jsx : « on remarquera que nous sommes déjà à la page 74 et »
+ch01.jsx : « arrêtons-nous quelques instants sur ce dia »
+ch01.jsx : « comme nous l'avons déjà évoqué, le roman prend don »
+ch01.jsx : « après une narration assez détaillée du bal et de d »
+ch01.jsx : « ici le discours de Sirius a une étrange résonance  »
+ch01.jsx : « dans ce même passage on peut voir également une ce »
+ch01.jsx : « juste une petite remarque, et sans développer : on »
+ch01.jsx : « difficile d'interrompre ce passage de l'affronteme »
