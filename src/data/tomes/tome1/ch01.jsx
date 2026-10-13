@@ -1,4 +1,4 @@
-import { Cle, Fl, Ligne, Definition } from '../../../components/contenu';
+import { Cle, Ligne, Definition } from '../../../components/contenu';
 
 export default {
   id: 'tome-1-chapitre-1',
@@ -6,13 +6,12 @@ export default {
   numero: 1,
   titre: "Les caractéristiques essentielles de Mister Dursley, Mrs Dursley et de Dudley",
   motsCles: ["portrait", "caractéristiques", "merveilleux", "dialogue"],
-  resume: "Ce document concerne le premier chapitre. Retenez bien qu'en général les portraits sont composés avec trois types d'information, les caractéristiques morales et les habitudes ! (piste rouge : on trouve aussi souvent des explications sur la place des personnages dans l'histoire).",
+  resume: "Ce document concerne le premier chapitre. Retenez bien qu'en général les portraits sont composés avec trois types d'information, les caractéristiques morales et les habitudes !",
   arrets: [
   {
     blocs: [
       {
-        type: 'piste',
-        niveau: "verte",
+        type: 'introduction',
         contenu: (
           <>
           <p><em>Ne vous inquiétez pas, dans ce chapitre il y a beaucoup de choses à dire, mais c’est parce qu’il nous faut installer un certain nombre de connaissances de base ! Les autres iront (un peu) plus vite et les commentaires seront moins nombreux dans les autres volumes.</em></p>
@@ -27,7 +26,7 @@ export default {
         contenu: (
           <>
           <Definition terme="caractéristique">
-            <p>signe qui permet de reconnaître un individu d’un autre.</p>
+            <p>Signe qui permet de reconnaître un individu d’un autre.</p>
             <p>Ex : Choisis des fraises <Cle>bien mûres</Cle> pour préparer ton gâteau !</p>
             <p className="annotation">caractéristiques</p>
           </Definition>
@@ -39,7 +38,7 @@ export default {
         niveau: "verte",
         contenu: (
           <>
-          <p><strong><Fl /></strong> Nous allons commencer par corriger ensemble le tableau des caractéristiques de <strong>M. Dursley</strong>. Vous allez corriger votre tableau au stylo vert si vous avez oublié quelque chose d’important !</p>
+          <p>Nous allons commencer par corriger ensemble le tableau des caractéristiques de <strong>M. Dursley</strong>. Vous allez corriger votre tableau au stylo vert si vous avez oublié quelque chose d’important !</p>
           <p>Pour ceux qui veulent aller plus loin,, je vous note ci-dessous en pistes rouge et noire quelques remarques à propos des caractéristiques cachées que vous n’aurez peut-être pas vues ! ( et que je n'aurai peut-être pas le temps d'expliquer en classe).<br /></p>
           </>
         ),
@@ -59,7 +58,7 @@ export default {
         niveau: "noire",
         contenu: (
           <>
-          <p>peut-être aussi que Mister Dursley ne veut pas toucher à l'enfant chéri de sa femme, le petit chouchou-pourri-gâté de sa Maman (qui est encore plus horrible et dangereuse que Dudley, en tout cas c'est probablement le point de vue de Mr Dursley) et qu'il préfère sagement <em>battre en retraite</em>.</p>
+          <p>Peut-être aussi que Mister Dursley ne veut pas toucher à l'enfant chéri de sa femme, le petit chouchou-pourri-gâté de sa Maman (qui est encore plus horrible et dangereuse que Dudley, en tout cas c'est probablement le point de vue de Mr Dursley) et qu'il préfère sagement <em>battre en retraite</em>.</p>
           <p><em>Note : le texte dit « c'était à leurs yeux le plus bel enfant du monde » fin du 2e paragraphe page 7 mais il est tout à fait possible que Mr Dursley répète les propos de sa femme pour être d'accord avec elle.</em></p>
           </>
         ),
@@ -85,7 +84,7 @@ export default {
           <ul className="chevrons">
             <li>superficiel. Mrs Dursley se préoccupe de choses qui n'ont pas beaucoup d'importance (ce que diront les voisins) mais ne s'occupe pas de l'essentiel ( garder de bonnes relations avec sa sœur, son beau-frère et son neveu, être une bonne personne, avoir de l’esprit)</li>
             <li>S'appelle Pétunia, un nom de fleur qui donne en effet assez ridicule et prétentieux à celui qui le porte.</li>
-            <li>A « des petits yeux de fouine » page 15 : cette caractéristique est particulièrement négative, pour ne pas dire dégradante ! (<Fl /> Piste noire<Fl /> : on parle de « <strong>connotation négative</strong> » quand on suggère quelque chose de mauvais à propos d’un objet ou d’un personnage).</li>
+            <li>A « des petits yeux de fouine » page 15 : cette caractéristique est particulièrement négative, pour ne pas dire dégradante ! (Piste noire : on parle de « <strong>connotation négative</strong> » quand on suggère quelque chose de mauvais à propos d’un objet ou d’un personnage).</li>
           </ul>
           <p><strong>3) Habitudes</strong> : aime espionner les voisins (ce qui en dit long sur son personnage ! Apparemment, elle n'a rien d'autre à faire et le narrateur ne trouve rien d'autre à dire sur elle…).</p>
           </>
@@ -106,7 +105,7 @@ export default {
         niveau: "rouge",
         contenu: (
           <>
-          <p>on pourrait penser ici que Mrs Dursley n'aime pas seulement espionner les voisins mais aussi raconter à qui veut l'entendre des ragots et des commérages en persiflant comme une vipère… c'est d'ailleurs ce qu'elle fait avec son mari en installant le petit Dudley sur sa chaise…</p>
+          <p>On pourrait penser ici que Mrs Dursley n'aime pas seulement espionner les voisins mais aussi raconter à qui veut l'entendre des ragots et des commérages en persiflant comme une vipère… c'est d'ailleurs ce qu'elle fait avec son mari en installant le petit Dudley sur sa chaise…</p>
           </>
         ),
       },
@@ -145,7 +144,7 @@ export default {
         niveau: "verte",
         contenu: (
           <>
-          <p>enfant colérique, mal éduqué et qui fait beaucoup de bruit.</p>
+          <p>Enfant colérique, mal éduqué et qui fait beaucoup de bruit.</p>
           <p>Donne des coups de pied à sa mère pour obtenir des bonbons (page 20)</p>
           </>
         ),
@@ -181,7 +180,7 @@ export default {
         niveau: "verte",
         contenu: (
           <>
-          <p><strong>&gt;&gt; Conclusion à propos des portraits :</strong></p>
+          <p><strong>Conclusion à propos des portraits :</strong></p>
           <p><strong>1) On remarque que le portrait d'Albus Dumbledore est bien plus précis que celui des époux Dursley ! C’est bien-sûr parce que c’est un personnage beaucoup plus important dans le livre. N’hésitez pas à garder cette logique dans vos propres rédactions.</strong></p>
           <p><strong>2) A l’évidence l’auteur a écrit ce chapitre avec l’idée de bien présenter ses personnages, j’espère que vous vous en êtes rendu compte !</strong></p>
           </>
@@ -277,7 +276,7 @@ export default {
         niveau: "rouge",
         contenu: (
           <>
-          <p>relisez le passage ci-dessus en étant attentif à ces “mouvements de caméra” cachés dans le texte.</p>
+          <p>Relisez le passage ci-dessus en étant attentif à ces “mouvements de caméra” cachés dans le texte.</p>
           </>
         ),
       },
@@ -308,7 +307,7 @@ export default {
         niveau: "noire",
         contenu: (
           <>
-          <p>cette apparition progressive de la magie dans le texte, de façon toujours plus évidente, s'appelle une <strong>gradation</strong>. C'est un procédé <Cle>en escalier qui montre un aspect intéressant par degrés successifs</Cle> : ici, au début, le lecteur découvre un chat a un comportement suspect, ensuite on voit des personnages bizarrement habillés qui circulent dans la rue (c'est encore plus bizarre) , ensuite Dumbledore éteint les lumières en actionnant un briquet magique (ciel ! mais c’est diablement bizarre !), et tout d'un coup le chat se transforme en une personne humaine..... <Cle>chaque étape est plus magique que la précédente</Cle>, comme un dégradé mais dans « l'autre sens » c'est pourquoi on parle de <strong>gradation</strong> : on pourra donc dire qu'<Cle>il y a une gradation qui marque l'apparition de la magie dans ce premier chapitre !</Cle></p>
+          <p>Cette apparition progressive de la magie dans le texte, de façon toujours plus évidente, s'appelle une <strong>gradation</strong>. C'est un procédé <Cle>en escalier qui montre un aspect intéressant par degrés successifs</Cle> : ici, au début, le lecteur découvre un chat a un comportement suspect, ensuite on voit des personnages bizarrement habillés qui circulent dans la rue (c'est encore plus bizarre) , ensuite Dumbledore éteint les lumières en actionnant un briquet magique (ciel ! mais c’est diablement bizarre !), et tout d'un coup le chat se transforme en une personne humaine..... <Cle>chaque étape est plus magique que la précédente</Cle>, comme un dégradé mais dans « l'autre sens » c'est pourquoi on parle de <strong>gradation</strong> : on pourra donc dire qu'<Cle>il y a une gradation qui marque l'apparition de la magie dans ce premier chapitre !</Cle></p>
           </>
         ),
       },

@@ -1,4 +1,4 @@
-import { Cle, Fl } from '../../../components/contenu';
+import { Cle } from '../../../components/contenu';
 
 export default {
   id: 'tome-1-chapitre-2',
@@ -6,13 +6,12 @@ export default {
   numero: 2,
   titre: "Un portrait croisé",
   motsCles: ["Portrait physique", "caractéristiques morales", "habitudes"],
-  resume: "Où l'on trouve le portraits d'autres personnages, et notamment celui de Harry. Piste rouge : quand on fait un portrait croisé (ici, Harry et Dudley), cela donne très envie au lecteur de comparer les deux !",
+  resume: "Où l'on trouve le portraits d'autres personnages, et notamment celui de Harry.",
   arrets: [
   {
     blocs: [
       {
-        type: 'piste',
-        niveau: "verte",
+        type: 'introduction',
         contenu: (
           <>
           <p><em>Dans ce chapitre nous allons découvrir le personnage de Harry mais nous allons aussi découvrir son alter-ego moldu, son cousin Dudley ! Un petit peu comme dans les contes de fée, quand le héros à des frères et soeurs maléfiques, la comparaison avec Dudley va rendre les qualités de Harry encore plus remarquables…</em></p>
@@ -34,8 +33,8 @@ export default {
             <li>Le chapitre s’ouvre <Cle>sur un saut de dix ans</Cle>. C’est un <strong>indice spatio-temporel</strong> important : Harry est devenu un jeune garçon et n’a rien à voir avec le bébé dont il était question !</li>
             <li>« Rien dans la pièce ne laissait deviner qu'un autre petit garçon habitait dans la même maison ». Cette phrase montre vraiment bien à quel point Harry n’avait pas sa place dans l’univers des Dursley !</li>
           </ul>
-          <p><Fl />Harry a oublié l'anniversaire de Dudley, <Cle>il n'a pas du tout les mêmes priorités que ses parents adoptifs</Cle>, on peut peut-être comprendre qu'il ne se laisse pas influencer par eux et qu'il réfléchit par lui-même.</p>
-          <p><Fl /> « Il dort souvent avec des araignées… » on apprendra très vite que c'est parce qu'il est logé dans un placard sous l'escalier ! C'est littéralement de la maltraitance, le personnage Harry a de ce point de vue quelques points communs avec Cendrillon qui elle dormait par terre devant la cheminée… dans les cendres !</p>
+          <p>Harry a oublié l'anniversaire de Dudley, <Cle>il n'a pas du tout les mêmes priorités que ses parents adoptifs</Cle>, on peut peut-être comprendre qu'il ne se laisse pas influencer par eux et qu'il réfléchit par lui-même.</p>
+          <p>« Il dort souvent avec des araignées… » on apprendra très vite que c'est parce qu'il est logé dans un placard sous l'escalier ! C'est littéralement de la maltraitance, le personnage Harry a de ce point de vue quelques points communs avec Cendrillon qui elle dormait par terre devant la cheminée… dans les cendres !</p>
           <ul className="chevrons">
             <li>Dudley a reçu une seconde télévision (?)</li>
           </ul>

@@ -11,8 +11,7 @@ export default {
   {
     blocs: [
       {
-        type: 'piste',
-        niveau: "verte",
+        type: 'introduction',
         contenu: (
           <>
           <p><em>Dans ce chapitre Harry va faire la connaissance d'un ennemi d'une dimension bien supérieure à Drago Malefoy, le professeur Rogue… un sorcier puissant, et qui en plus déteste Harry ! La</em> <strong><em>tension du récit</em></strong> <em>monte donc d'un cran et le malaise pour le lecteur vient de ce que Rogue est le professeur de Harry, ce qui signifie qu'il a une certaine <Cle>capacité de nuire</Cle> (je vous épargne ici la liste des ressources qu'un professeur a à sa disposition pour nuire à un élève).</em></p>
@@ -167,7 +166,7 @@ export default {
         niveau: "noire",
         contenu: (
           <>
-          <p>ici l'auteur utilise une <strong>figure de style</strong> qui s'appelle une <strong>gradation</strong>, c'est une forme de liste dans laquelle chaque nouvel ajout est plus impressionnant que son <strong>antécédent</strong> ! ( antécédent signifie la chose qui vient juste avant).</p>
+          <p>Ici l'auteur utilise une <strong>figure de style</strong> qui s'appelle une <strong>gradation</strong>, c'est une forme de liste dans laquelle chaque nouvel ajout est plus impressionnant que son <strong>antécédent</strong> ! ( antécédent signifie la chose qui vient juste avant).</p>
           <p><Cle>Explication</Cle> : Mettre la gloire en bouteille, c’est bien, on a une bouteille précieuse. Distiller la grandeur, c’est mieux, parce que cela implique que l’on va en bénéficier après (et devenir puissant) Mais enfermer la mort dans un flacon, c’est encore plus frappant, car maîtriser la mort c’est déjà être un petit peu immortel…</p>
           <p>Rappel : <strong>figure de style</strong> : procédé utilisé par l'auteur pour appuyer sur un aspect précis du texte en s'éloignant de l'usage normal de la langue.</p>
           </>
@@ -208,7 +207,7 @@ export default {
         niveau: "verte",
         contenu: (
           <>
-          <p>dans cette scène le fait que le professeur Rogue interroge Harry trois fois de suite est une forme d'humiliation puisqu'il ne cherche aucunement à l'aider ou à le faire progresser. C'est plutôt une forme de harcèlement. De façon surprenante, Harry ne se dégonfle pas et suggère d'interroger Hermione. Rogue relève l'impertinence de Harry et enlève un point à Gryffondor.</p>
+          <p>Dans cette scène le fait que le professeur Rogue interroge Harry trois fois de suite est une forme d'humiliation puisqu'il ne cherche aucunement à l'aider ou à le faire progresser. C'est plutôt une forme de harcèlement. De façon surprenante, Harry ne se dégonfle pas et suggère d'interroger Hermione. Rogue relève l'impertinence de Harry et enlève un point à Gryffondor.</p>
           </>
         ),
       },
@@ -232,7 +231,7 @@ export default {
         niveau: "verte",
         contenu: (
           <>
-          <p>après la théorie, l'action… c'est un procédé souvent utilisé dans la narration <strong>des récits d'apprentissage :</strong> d'abord on découvre ce qui va se passer et ensuite on se jette à l'eau avec les héros !</p>
+          <p>Après la théorie, l'action… c'est un procédé souvent utilisé dans la narration <strong>des récits d'apprentissage :</strong> d'abord on découvre ce qui va se passer et ensuite on se jette à l'eau avec les héros !</p>
           </>
         ),
       },
@@ -242,7 +241,7 @@ export default {
         contenu: (
           <>
           <Definition terme="Récit d’apprentissage">
-            <p>récit dans lequel le héros part de zéro et dont on suit la progression lente et évolutive, niveau par niveau.</p>
+            <p>Récit dans lequel le héros part de zéro et dont on suit la progression lente et évolutive, niveau par niveau.</p>
           </Definition>
           </>
         ),
@@ -328,7 +327,7 @@ export default {
         niveau: "verte",
         contenu: (
           <>
-          <p>pour la seconde fois, Hagrid évite de devoir s'expliquer.. la banque de Gringotts a été cambriolée le jour de l'anniversaire de Harry, alors que lui-même était dans les murs. (cela veut dire qu'il se trouvait sur place à ce moment-là)</p>
+          <p>Pour la seconde fois, Hagrid évite de devoir s'expliquer.. la banque de Gringotts a été cambriolée le jour de l'anniversaire de Harry, alors que lui-même était dans les murs. (cela veut dire qu'il se trouvait sur place à ce moment-là)</p>
           </>
         ),
       },

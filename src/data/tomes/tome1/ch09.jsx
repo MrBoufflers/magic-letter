@@ -11,8 +11,7 @@ export default {
   {
     blocs: [
       {
-        type: 'piste',
-        niveau: "verte",
+        type: 'introduction',
         contenu: (
           <>
           <p><em>Il est étonnant de constater que pour la première fois dans ce récit entre en jeu la question du</em> <strong><em>mouvement</em></strong> <em>: la première partie du chapitre se concentre sur la question du vol, suite à l'exploit d'Harry (la descente en piqué et la saisie du vif d’or), tandis que la seconde partie aborde une folle course-poursuite dans les couloirs de Poudlard, et en pleine nuit ! Voyons un petit peu quels sont les</em> <strong><em>ingrédients</em></strong> <em>utilisés par le narrateur pour rendre ce chapitre dynamique, notamment pour <Cle>entraîner le lecteur dans cette folle cavalcade</Cle>…On les appelle des</em> <strong><em>procédés littéraires</em></strong><em>. C’est à retenir pour la suite…</em></p>
@@ -33,7 +32,7 @@ export default {
         niveau: "noire",
         contenu: (
           <>
-          <p>lorsque l'on doit exprimer une incertitude ou un degré de probabilité, on utilise souvent comme je viens de le faire les termes <em>peut-être, certainement, il se pourrait que, je crois que, j'ai l'impression que…</em></p>
+          <p>Lorsque l'on doit exprimer une incertitude ou un degré de probabilité, on utilise souvent comme je viens de le faire les termes <em>peut-être, certainement, il se pourrait que, je crois que, j'ai l'impression que…</em></p>
           <p>Ce sont des mots que l'on utilise pour <Cle>montrer que l'on n'est pas tout à fait sûr de ce que l'on dit ou que l'on prend une certaine distance avec la vérité</Cle> : on les appelle des <strong>modalisateurs</strong>, c'est une question qui va vous occuper durant votre programme de 4e/3e.</p>
           </>
         ),
@@ -88,7 +87,7 @@ export default {
         niveau: "verte",
         contenu: (
           <>
-          <p>nouvel accident de Neville Londubat qui, enfourchant son balai, s’éleva dans les airs avant de s'écraser au sol.. et de regarder son balai s'enfoncer dans la forêt interdite.</p>
+          <p>Nouvel accident de Neville Londubat qui, enfourchant son balai, s’éleva dans les airs avant de s'écraser au sol.. et de regarder son balai s'enfoncer dans la forêt interdite.</p>
           </>
         ),
       },
@@ -103,7 +102,7 @@ export default {
         niveau: "verte",
         contenu: (
           <>
-          <p>course-poursuite avec Malefoy que Harry poursuit sans hésiter alors qu'il n'a aucune expérience. On voit son talent inné (qui lui est venu avec sa naissance) pour le vol avec la phrase « il ressentit une joie intense en découvrant soudain qu'il savait faire voler un balai sans avoir eu besoin d'apprendre. C'était quelque chose qui lui paraissait très naturel, très facile, et qui lui donnait une sensation merveilleuse ». La phrase est très claire en elle-même, mais la présence des adjectifs <em>naturels</em>, <em>facile</em> et <em>merveilleuse</em> donne un aspect très positif à ce talent !</p>
+          <p>Course-poursuite avec Malefoy que Harry poursuit sans hésiter alors qu'il n'a aucune expérience. On voit son talent inné (qui lui est venu avec sa naissance) pour le vol avec la phrase « il ressentit une joie intense en découvrant soudain qu'il savait faire voler un balai sans avoir eu besoin d'apprendre. C'était quelque chose qui lui paraissait très naturel, très facile, et qui lui donnait une sensation merveilleuse ». La phrase est très claire en elle-même, mais la présence des adjectifs <em>naturels</em>, <em>facile</em> et <em>merveilleuse</em> donne un aspect très positif à ce talent !</p>
           </>
         ),
       },
@@ -112,7 +111,7 @@ export default {
         niveau: "rouge",
         contenu: (
           <>
-          <p>on pourra dire que la <strong>description</strong> du talent de Harry est très positive, ou mieux encore qu'elle est <strong>méliorative</strong>.</p>
+          <p>On pourra dire que la <strong>description</strong> du talent de Harry est très positive, ou mieux encore qu'elle est <strong>méliorative</strong>.</p>
           </>
         ),
       },
@@ -121,7 +120,7 @@ export default {
         niveau: "noire",
         contenu: (
           <>
-          <p>quand le texte parle d'un sujet précis de façon positive on peut dire qu'il est <strong>connoté positivement</strong>, et au contraire quand les mots choisis donnent une impression négative ou désagréable on dira qu'il est <strong>connoté négativement</strong>. C'est un petit peu la même chose que quand on n'utilise des couleurs vives, ou au contraire des couleurs grises et sombres quand on veut représenter quelqu'un ou quelque chose de façon triste.</p>
+          <p>Quand le texte parle d'un sujet précis de façon positive on peut dire qu'il est <strong>connoté positivement</strong>, et au contraire quand les mots choisis donnent une impression négative ou désagréable on dira qu'il est <strong>connoté négativement</strong>. C'est un petit peu la même chose que quand on n'utilise des couleurs vives, ou au contraire des couleurs grises et sombres quand on veut représenter quelqu'un ou quelque chose de façon triste.</p>
           </>
         ),
       },
@@ -161,7 +160,7 @@ export default {
         niveau: "noire",
         contenu: (
           <>
-          <p>nous pouvons donc dire que le narrateur <strong>connote</strong> négativement le comportement de Hermione… ou sa personnalité.</p>
+          <p>Nous pouvons donc dire que le narrateur <strong>connote</strong> négativement le comportement de Hermione… ou sa personnalité.</p>
           </>
         ),
       },
@@ -176,7 +175,7 @@ export default {
         niveau: "verte",
         contenu: (
           <>
-          <p>nouvelle surprise réservée par l'environnement magique de Poudlard, la grosse dame qui garde la porte des Gryffondor est sortie de son tableau pour aller se promener !</p>
+          <p>Nouvelle surprise réservée par l'environnement magique de Poudlard, la grosse dame qui garde la porte des Gryffondor est sortie de son tableau pour aller se promener !</p>
           </>
         ),
       },
@@ -236,7 +235,7 @@ export default {
         niveau: "verte",
         contenu: (
           <>
-          <p>contre toute attente, Peeves est tellement instable qu'il préfère faire une blague plutôt que d'aider le concierge à rattraper les élèves. On dira que ce personnage est imprévisible, et il peut lui arriver comme ici de faire basculer l’histoire dans le bon sens !</p>
+          <p>Contre toute attente, Peeves est tellement instable qu'il préfère faire une blague plutôt que d'aider le concierge à rattraper les élèves. On dira que ce personnage est imprévisible, et il peut lui arriver comme ici de faire basculer l’histoire dans le bon sens !</p>
           </>
         ),
       },
@@ -251,7 +250,7 @@ export default {
         niveau: "verte",
         contenu: (
           <>
-          <p>apparition du cerbère à trois têtes, « d'où pendaient un filet de salive épais comme des cordes ». C’est une comparaison légèrement dégoûtante qui nous permet de comprendre qu’il ne vaut mieux pas s’approcher… Il n'est pas rare que dans les <strong>romans d'aventure</strong> l'on trouve des monstres proprement terrifiants !</p>
+          <p>Apparition du cerbère à trois têtes, « d'où pendaient un filet de salive épais comme des cordes ». C’est une comparaison légèrement dégoûtante qui nous permet de comprendre qu’il ne vaut mieux pas s’approcher… Il n'est pas rare que dans les <strong>romans d'aventure</strong> l'on trouve des monstres proprement terrifiants !</p>
           </>
         ),
       },
@@ -275,7 +274,7 @@ export default {
         niveau: "verte",
         contenu: (
           <>
-          <p>le chapitre se termine sur une <strong>révélation</strong> :« apparemment, Harry avait découvert où se trouvait désormais le petit paquet enveloppé de papier kraft que Hagrid était allé chercher dans la chambre forte numéro 713. » <Cle>Souvent les chapitres se terminent par l'apparition d'un nouveau mystère, ce qui donne au lecteur l'envie de poursuivre, un petit peu comme à la fin de l'épisode d'une série.</Cle></p>
+          <p>Le chapitre se termine sur une <strong>révélation</strong> :« apparemment, Harry avait découvert où se trouvait désormais le petit paquet enveloppé de papier kraft que Hagrid était allé chercher dans la chambre forte numéro 713. » <Cle>Souvent les chapitres se terminent par l'apparition d'un nouveau mystère, ce qui donne au lecteur l'envie de poursuivre, un petit peu comme à la fin de l'épisode d'une série.</Cle></p>
           </>
         ),
       },
@@ -290,7 +289,7 @@ export default {
         niveau: "verte",
         contenu: (
           <>
-          <p>mais ce n'est pas tout, Hermione ne s'entendait pas du tout jusqu'ici avec Harry et Ron, <Cle>mais cet épisode durant lequel elle a été embarquée dans leurs aventures marque le début d'un rapprochement pour notre trio</Cle>… C'est-à-dire que <strong>nous assistons à <Cle>l’histoire de la formation de cette incroyable équipe !</Cle></strong> Il n’est pas rare en littérature que quand on raconte l’histoire d’une équipe on raconte d’abord l’histoire de sa <em>formation</em> : vous retrouverez ceci dans <em>Sherlock Holmes</em>, ou dans <em>les Trois mousquetaires !</em></p>
+          <p>Mais ce n'est pas tout, Hermione ne s'entendait pas du tout jusqu'ici avec Harry et Ron, <Cle>mais cet épisode durant lequel elle a été embarquée dans leurs aventures marque le début d'un rapprochement pour notre trio</Cle>… C'est-à-dire que <strong>nous assistons à <Cle>l’histoire de la formation de cette incroyable équipe !</Cle></strong> Il n’est pas rare en littérature que quand on raconte l’histoire d’une équipe on raconte d’abord l’histoire de sa <em>formation</em> : vous retrouverez ceci dans <em>Sherlock Holmes</em>, ou dans <em>les Trois mousquetaires !</em></p>
           </>
         ),
       },

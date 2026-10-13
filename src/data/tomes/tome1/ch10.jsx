@@ -1,4 +1,4 @@
-import { Cle, Fl, Blanc, Ligne } from '../../../components/contenu';
+import { Cle, Blanc, Ligne } from '../../../components/contenu';
 
 export default {
   id: 'tome-1-chapitre-10',
@@ -11,8 +11,7 @@ export default {
   {
     blocs: [
       {
-        type: 'piste',
-        niveau: "verte",
+        type: 'introduction',
         contenu: (
           <>
           <p><em>Dans ce chapitre, <Cle>l’écriture de JK Rowling se fait plus complexe</Cle>, c'est-à-dire qu’elle utilise <Cle>des recettes plus compliquées pour faire avancer son histoire</Cle> et pour nous faire comprendre certains événements… Notamment en faisant des</em> <strong><em>sous-entendus</em></strong><em>… elle suggère des choses mais ne dit pas tout ! <Cle>C’est ce qui va vous permettre de jouer votre petit rôle de détective</Cle>… Un livre est toujours un jeu auquel participe l'intelligence du</em> <strong><em>lecteur</em></strong> <em>! Nous allons relever quelques passages importants pour expliquer comment tout cela fonctionne… et nous arrêter quand il le faut sur quelques</em> <strong><em>citations</em></strong> <em>du texte.</em></p>
@@ -57,9 +56,9 @@ export default {
         niveau: "noire",
         contenu: (
           <>
-          <p>la troisième chose qui renforce l'idée que Malefoy est cruellement déçu est la <strong>figure de style</strong> employée par le narrateur : il dit que Malefoy « n'en crut pas ses yeux »… c'est une figure de style tellement répandue dans le langage courant qu'on ne la remarque même plus ! Mais <Cle>l'idée que l'on ne puisse pas faire confiance à ses propres yeux est une idée très forte</Cle>, c'est un peu comme si l'on disait « Malefoy crut que les yeux allaient lui tomber de la tête »… tellement il était étonné !</p>
-          <p><Fl />Piste noire (encore)<Fl /> : Quand, comme je viens de le faire, un texte vous explique par énumération ( c'est une liste déguisée en texte) une série de points difficiles à comprendre, il est utile de <strong>prendre des notes</strong> et de faire la petite liste correspondante juste à côté pour bien voir comment les choses s'organisent : ici cela donne…<br /></p>
-          <p>(<strong><em>suite <Fl />piste noire<Fl /></em></strong>)</p>
+          <p>La troisième chose qui renforce l'idée que Malefoy est cruellement déçu est la <strong>figure de style</strong> employée par le narrateur : il dit que Malefoy « n'en crut pas ses yeux »… c'est une figure de style tellement répandue dans le langage courant qu'on ne la remarque même plus ! Mais <Cle>l'idée que l'on ne puisse pas faire confiance à ses propres yeux est une idée très forte</Cle>, c'est un peu comme si l'on disait « Malefoy crut que les yeux allaient lui tomber de la tête »… tellement il était étonné !</p>
+          <p>Piste noire (encore) : Quand, comme je viens de le faire, un texte vous explique par énumération ( c'est une liste déguisée en texte) une série de points difficiles à comprendre, il est utile de <strong>prendre des notes</strong> et de faire la petite liste correspondante juste à côté pour bien voir comment les choses s'organisent : ici cela donne…<br /></p>
+          <p>(<strong><em>suite piste noire</em></strong>)</p>
           <p><Cle>L’auteur accentue la surprise de Malefoy..</Cle></p>
           <ul>
             <li>Dans la narration, en faisant comprendre qu'il a méticuleusement préparé son piège.</li>
@@ -395,7 +394,7 @@ export default {
         niveau: "rouge",
         contenu: (
           <>
-          <p>rappelez-vous de la définition du suspense : c'est <em>un passage de l'histoire durant lequel le lecteur ressent une attente angoissée et que le narrateur prolonge en ralentissant l'action</em> ! C'est exactement ce que fait JK Rowling ici.</p>
+          <p>Rappelez-vous de la définition du suspense : c'est <em>un passage de l'histoire durant lequel le lecteur ressent une attente angoissée et que le narrateur prolonge en ralentissant l'action</em> ! C'est exactement ce que fait JK Rowling ici.</p>
           </>
         ),
       },

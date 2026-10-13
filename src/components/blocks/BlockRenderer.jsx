@@ -1,6 +1,7 @@
 import registry from './registry';
 
-export default function BlockRenderer({ blocs }) {
+// `prefixe` sert à donner un identifiant stable à chaque bloc (ancres des mots-clés).
+export default function BlockRenderer({ blocs, prefixe = 'bloc' }) {
   if (!Array.isArray(blocs)) return null;
   return (
     <div className="blocs">
@@ -11,7 +12,11 @@ export default function BlockRenderer({ blocs }) {
           return null;
         }
         const { type: _type, ...props } = bloc;
-        return <Composant key={i} {...props} />;
+        return (
+          <div key={i} id={`${prefixe}-${i}`} className="ancre" data-type={bloc.type}>
+            <Composant {...props} />
+          </div>
+        );
       })}
     </div>
   );

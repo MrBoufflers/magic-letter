@@ -36,7 +36,7 @@ export default {
         niveau: "rouge",
         contenu: (
           <>
-          <p>quand on commente un texte, il est très important de choisir avec précision <strong>les noms et les adjectifs</strong> que l'on utilise pour faire comprendre <Cle>exactement</Cle> ce que l'on a pensé d'un personnage ou d'une situation ! Ici, de dire que Hagrid a été <em>méchant</em> avec Dudley et certes juste, mais bien moins précis - et en conséquence bien moins intéressant - que de dire qu'il se montre <Cle>insultant</Cle> ! Mais on aurait pu dire aussi exécrable, méprisant, agressif, humiliant…. Cherchez ces mots dans le dictionnaire si vous n'êtes pas sûrs de leur signification !</p>
+          <p>Quand on commente un texte, il est très important de choisir avec précision <strong>les noms et les adjectifs</strong> que l'on utilise pour faire comprendre <Cle>exactement</Cle> ce que l'on a pensé d'un personnage ou d'une situation ! Ici, de dire que Hagrid a été <em>méchant</em> avec Dudley et certes juste, mais bien moins précis - et en conséquence bien moins intéressant - que de dire qu'il se montre <Cle>insultant</Cle> ! Mais on aurait pu dire aussi exécrable, méprisant, agressif, humiliant…. Cherchez ces mots dans le dictionnaire si vous n'êtes pas sûrs de leur signification !</p>
           </>
         ),
       },
@@ -78,7 +78,7 @@ export default {
         niveau: "noire",
         contenu: (
           <>
-          <p>on parle aussi de <strong>procédé de mise en scène</strong> dès qu'un auteur choisit de placer ses personnages dans un endroit particulier, ou qu'il gère le son, ou la lumière, comme le ferait un metteur en scène de théâtre quand qui doit décider comment faire jouer sur les planches le texte de sa pièce.</p>
+          <p>On parle aussi de <strong>procédé de mise en scène</strong> dès qu'un auteur choisit de placer ses personnages dans un endroit particulier, ou qu'il gère le son, ou la lumière, comme le ferait un metteur en scène de théâtre quand qui doit décider comment faire jouer sur les planches le texte de sa pièce.</p>
           </>
         ),
       },
@@ -107,7 +107,7 @@ export default {
         niveau: "noire",
         contenu: (
           <>
-          <p>c'est à ce genre de détails que l'on reconnaît les grands auteurs.. mon professeur de littérature et de cinéma à l'université avait coutume de dire que <Cle>le grand secret pour raconter une histoire c'est de savoir gérer ses moments faibles !</Cle> La <em>remise d'une lettre</em> n'est évidemment pas le moment le plus fort dans une histoire mais JK Rowling a réussi à tisser plusieurs <strong>problématiques</strong> autour de cette action toute bête, comme par exemple la découverte de la vérité sur la mort des parents de Harry ou un certain retour de la justice avec Hagrid qui donne aux Dursley la leçon qu'ils méritaient.</p>
+          <p>C'est à ce genre de détails que l'on reconnaît les grands auteurs.. mon professeur de littérature et de cinéma à l'université avait coutume de dire que <Cle>le grand secret pour raconter une histoire c'est de savoir gérer ses moments faibles !</Cle> La <em>remise d'une lettre</em> n'est évidemment pas le moment le plus fort dans une histoire mais JK Rowling a réussi à tisser plusieurs <strong>problématiques</strong> autour de cette action toute bête, comme par exemple la découverte de la vérité sur la mort des parents de Harry ou un certain retour de la justice avec Hagrid qui donne aux Dursley la leçon qu'ils méritaient.</p>
           </>
         ),
       },

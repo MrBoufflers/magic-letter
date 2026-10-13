@@ -30,7 +30,7 @@ export default {
         niveau: "verte",
         contenu: (
           <>
-          <p>nouveau <strong>coup de théâtre</strong> (= changement inattendu de situation ou révélation surprenante dans un récit) dans lequel on apprend que la présence de Norbert le dragon dans cette histoire n'était pas juste une petite pause avant la dernière partie ! Hagrid s'est en réalité <Cle>fait piéger</Cle> par un mystérieux interlocuteur qui gardait son capuchon et dont on n’a jamais vu le visage…</p>
+          <p>Nouveau <strong>coup de théâtre</strong> (= changement inattendu de situation ou révélation surprenante dans un récit) dans lequel on apprend que la présence de Norbert le dragon dans cette histoire n'était pas juste une petite pause avant la dernière partie ! Hagrid s'est en réalité <Cle>fait piéger</Cle> par un mystérieux interlocuteur qui gardait son capuchon et dont on n’a jamais vu le visage…</p>
           </>
         ),
       },

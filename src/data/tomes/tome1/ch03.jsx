@@ -1,4 +1,4 @@
-import { Cle, Fl, Blanc, Ligne, Definition } from '../../../components/contenu';
+import { Cle, Blanc, Ligne, Definition } from '../../../components/contenu';
 
 export default {
   id: 'tome-1-chapitre-3',
@@ -36,7 +36,7 @@ export default {
         niveau: "noire",
         contenu: (
           <>
-          <p>évidemment, quand on repère un <strong>procédé littéraire</strong> spécifique c'est une porte d'entrée pour une analyse un petit peu plus approfondie sur le travail de l'auteur. Ici, nous avons remarqué que le titre était choisi avec beaucoup de finesse, il y a donc lieu de s'interroger sur les autres titres des chapitres… peut-être qu’eux aussi réservent des surprises ! Le premier chapitre s'appelle “Le survivant”, c'est un groupe nominal sans verbe (= sans action) qui désigne Harry Potter…. <Cle>C'est un bon titre car cela correspond exactement à la situation initiale de l'histoire : au début des histoires il n'y a pas beaucoup d'action, et l’on découvre pourquoi Harry est célèbre (parce qu’il a survécu !)</Cle></p>
+          <p>Évidemment, quand on repère un <strong>procédé littéraire</strong> spécifique c'est une porte d'entrée pour une analyse un petit peu plus approfondie sur le travail de l'auteur. Ici, nous avons remarqué que le titre était choisi avec beaucoup de finesse, il y a donc lieu de s'interroger sur les autres titres des chapitres… peut-être qu’eux aussi réservent des surprises ! Le premier chapitre s'appelle “Le survivant”, c'est un groupe nominal sans verbe (= sans action) qui désigne Harry Potter…. <Cle>C'est un bon titre car cela correspond exactement à la situation initiale de l'histoire : au début des histoires il n'y a pas beaucoup d'action, et l’on découvre pourquoi Harry est célèbre (parce qu’il a survécu !)</Cle></p>
           <p>Par contre, le chapitre 2 s'appelle « Une vitre disparaît » et c'est en quelque sorte la première action qui se passe dans l'histoire, une action très mystérieuse qui est due à la magie de Harry qui annonce beaucoup de choses pour la suite, puisque à ce moment-là la magie est tout à fait involontaire, on peut se demander ce qu'elle cela deviendra quand il maîtrisera ses pouvoirs !</p>
           </>
         ),
@@ -145,7 +145,7 @@ export default {
         niveau: "rouge",
         contenu: (
           <>
-          <p>comme pour le dialogue la <strong>forme du texte</strong> est importante ! Si l'auteur donne tous ses détails, c'est qu'il y a quelque chose à voir et évidemment ici c'est la fameuse information « <em>dans le placard sous l'escalier</em> ». Celle-ci signifie d'une part que <Cle>les sorciers sont au courant de tout ce qui se passe dans cette maison</Cle> ( ce qui est à la fois rassurant pour le lecteur mais très inquiétant pour Mister and Miss Dursley) mais aussi que cette information pourrait éventuellement être divulguée, c'est-à-dire rendu publique, ce qui serait une immense honte pour ces deux personnages qui perdraient leur excellente réputation auprès de leurs voisins, celle à laquelle ils tiennent tant, souvenez-vous !</p>
+          <p>Comme pour le dialogue la <strong>forme du texte</strong> est importante ! Si l'auteur donne tous ses détails, c'est qu'il y a quelque chose à voir et évidemment ici c'est la fameuse information « <em>dans le placard sous l'escalier</em> ». Celle-ci signifie d'une part que <Cle>les sorciers sont au courant de tout ce qui se passe dans cette maison</Cle> ( ce qui est à la fois rassurant pour le lecteur mais très inquiétant pour Mister and Miss Dursley) mais aussi que cette information pourrait éventuellement être divulguée, c'est-à-dire rendu publique, ce qui serait une immense honte pour ces deux personnages qui perdraient leur excellente réputation auprès de leurs voisins, celle à laquelle ils tiennent tant, souvenez-vous !</p>
           </>
         ),
       },
@@ -213,7 +213,7 @@ export default {
         contenu: (
           <>
           <Definition terme="figure de style">
-            <p>procédé par lequel l'auteur appuie sur un point précis du texte en s'écartant de l'usage ordinaire de la langue.</p>
+            <p>Procédé par lequel l'auteur appuie sur un point précis du texte en s'écartant de l'usage ordinaire de la langue.</p>
           </Definition>
           </>
         ),
@@ -229,7 +229,7 @@ export default {
         niveau: "verte",
         contenu: (
           <>
-          <p>A propos d’un procédé de <strong>mise en scène</strong> (voir <Fl />p.44 si vous avez oublié de quoi il s’agit).</p>
+          <p>A propos d’un procédé de <strong>mise en scène</strong> (voir p.44 si vous avez oublié de quoi il s’agit).</p>
           <p>Les Potter ont dormi à l'hôtel mais une centaine de lettres semblables arrivent à la réception ! Il est à noter qu’en ces circonstances Harry et Dudley <Cle>ont dormi dans la même chambre</Cle> ! Cela signifie qu'il y a tellement de désordre dans leur vie que cette fois-ci il n'y a <Cle>plus du tout de différence entre eux</Cle> dans leur façon de passer la nuit…</p>
           </>
         ),
@@ -239,7 +239,7 @@ export default {
         niveau: "noire",
         contenu: (
           <>
-          <p>c’est donc un <strong>procédé de mise en scène</strong> : l’auteur nous montre par l’organisation des chambres quelle est la position des personnages à tel ou tel moment de l’histoire. La position de Harry s’est progressivement améliorée, la proximité de Hagrid (et donc de son inscription à Poudlard) fait de lui l’égal de Dudley !</p>
+          <p>C’est donc un <strong>procédé de mise en scène</strong> : l’auteur nous montre par l’organisation des chambres quelle est la position des personnages à tel ou tel moment de l’histoire. La position de Harry s’est progressivement améliorée, la proximité de Hagrid (et donc de son inscription à Poudlard) fait de lui l’égal de Dudley !</p>
           </>
         ),
       },
